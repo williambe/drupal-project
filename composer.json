@@ -45,7 +45,7 @@
         "webflo/drupal-finder": "^0.2.1",
         "webmozart/path-util": "^2.3",
         "drupal/console": "~1.0",
-        "williambe/wb_profile": "8.x-dev"
+        "williambe/wb_profile": "~1.0"
     },
     "require-dev": {
         "behat/mink": "~1.7",
@@ -106,7 +106,6 @@
             "drupal/core": {
                 "Stable theme does not respect visually hidden field label display option": "https://www.drupal.org/files/issues/stable_theme_does_not-2779919-10.patch"     
             }
-
         }
     }
 }
