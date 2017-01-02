@@ -55,6 +55,10 @@
         "phing/phing": "~2.10",
         "drupal/phingdrushtask": "^1.1",
         "phpunit/phpunit": ">=4.8.28 <5",
+        "mikey179/vfsStream": "~1.2",
+        "phing/phing": "~2.10",
+        "drupal/phingdrushtask": "dev-7.x-2.x",
+        "phpunit/phpunit": "~4.8",
         "symfony/css-selector": "~2.8"
     },
     "conflict": {
