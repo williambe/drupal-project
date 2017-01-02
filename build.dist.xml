@@ -14,12 +14,12 @@
     <echo msg="Loading Drush task." />
     <taskdef name="drush" classname="\Drush\Task" />
 
-    <echo msg="Loading PHP Codesniffer Configuration task." />
+<!--     <echo msg="Loading PHP Codesniffer Configuration task." />
     <taskdef name="phpcodesnifferconfiguration" classname="\DrupalProject\Phing\PhpCodeSnifferConfigurationTask" />
 
     <echo msg="Loading PHPUnit Configuration task." />
     <taskdef name="phpunitconfiguration" classname="\DrupalProject\Phing\PhpUnitConfigurationTask" />
-
+ -->
     <!-- Make the settings folder writeable so that the installer can copy settings.php. -->
     <target name="writable-settings-folder">
         <chmod mode="0755" failonerror="true" verbose="true" quiet="false" file="${website.settings.dir}" />
