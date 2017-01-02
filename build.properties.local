@@ -1,0 +1,14 @@
+# Database settings.
+drupal.db.name = drupal_sandbox
+drupal.db.user = root
+drupal.db.password = root
+
+# Admin user.
+drupal.admin.username = admin
+drupal.admin.password = admin
+
+# The base URL to use in tests.
+drupal.base_url = http://sandbox5.dev
+
+# Verbosity of Drush commands. Set to 'yes' for verbose output.
+drush.verbose = yes
