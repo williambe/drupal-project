@@ -31,10 +31,10 @@
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6",
         "drupal-composer/drupal-scaffold": "^2.2",
+        "drupal/console": "~1.0",
         "cweagans/composer-patches": "^1.6",
         "drupal/core": "~8.0",
         "drush/drush": "~8.0",
-        "drupal/console": "~1.0",
         "williambe/wb_profile": "dev-master",
         "williambe/pattern-lab-starter": "dev-starterkit_wb",
         "drupal/ui_patterns": "^1.0@beta",
@@ -44,7 +44,6 @@
         "davidbarratt/custom-installer": "^1.0@alpha",
         "webflo/drupal-finder": "^0.2.1",
         "webmozart/path-util": "^2.3",
-        "drupal/console": "~1.0",
         "williambe/wb_profile": "dev-master"
     },
     "require-dev": {
@@ -105,7 +104,10 @@
             "enable-patching" : true,
             "drupal/core": {
                 "Stable theme does not respect visually hidden field label display option": "https://www.drupal.org/files/issues/stable_theme_does_not-2779919-10.patch"     
-            }
+            },
+        "_comment_patches": "Temporarily enabling patches on chained composer.json until config_installer is on core",
+        "patches": {
+            "enable-patching" : true
         }
     }
 }
