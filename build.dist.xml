@@ -55,7 +55,7 @@
     </target>
 
     <!-- Set up PHP CodeSniffer. -->
-    <target name="setup-php-codesniffer" description="Generate the configuration file for PHP CodeSniffer.">
+    <!-- <target name="setup-php-codesniffer" description="Generate the configuration file for PHP CodeSniffer.">
         <if>
             <available file="${phpcs.config}" type="file" property="phpcs.config.available" />
             <then>
@@ -80,25 +80,25 @@
             report="${phpcs.report}"
             showProgress="${phpcs.progress}"
             showSniffCodes="${phpcs.sniffcodes}"
-            standard="${phpcs.standard}" />
+            standard="${phpcs.standard}" /> -->
 
         <!-- Set up the git pre-push hook. -->
-        <phingcall target="disable-pre-push" />
+        <!-- <phingcall target="disable-pre-push" />
         <if>
             <equals arg1="${phpcs.prepush.enable}" arg2="1" />
             <then>
                 <symlink link="${phpcs.prepush.destination}" target="${phpcs.prepush.source}" overwrite="true" />
             </then>
         </if>
-    </target>
+    </target> -->
 
     <!-- Disable the PHP CodeSniffer pre-push hook. -->
-    <target name="disable-pre-push" description="Disable the coding standards check when pushing to a git repository.">
+    <!-- <target name="disable-pre-push" description="Disable the coding standards check when pushing to a git repository.">
         <delete file="${phpcs.prepush.destination}" failonerror="false" />
-    </target>
+    </target> -->
 
     <!-- Set up Behat. -->
-    <target name="setup-behat" description="Generate the configuration file for Behat.">
+    <!-- <target name="setup-behat" description="Generate the configuration file for Behat.">
         <if>
             <available file="${behat.yml.path}" type="file" property="behat.yml.available" />
             <then>
@@ -109,10 +109,10 @@
         <echo message="Creating behat.yml configuration file" />
         <loadfile property="behat.yml.content" file="${behat.yml.template}" />
         <echo message="${behat.yml.content}" file="${behat.yml.path}" />
-    </target>
+    </target> -->
 
     <!-- Set up PHPUnit. -->
-    <target name="setup-phpunit" description="Generate the configuration file for PHPUnit.">
+    <!-- <target name="setup-phpunit" description="Generate the configuration file for PHPUnit.">
         <if>
             <available file="${phpunit.config}" type="file" property="phpunit.config.available" />
             <then>
@@ -129,12 +129,12 @@
                 baseUrl="${phpunit.base_url}"
                 dbUrl="${phpunit.db_url}"
                 browsertestOutputDirectory="${phpunit.browsertest_output_dir}"
-                browsertestOutputFile="${phpunit.browsertest_output_file}" />
+                browsertestOutputFile="${phpunit.browsertest_output_file}" /> -->
 
         <!-- Create the directory and file for browsertest output. -->
-        <mkdir dir="${phpunit.browsertest_output_dir}" />
+        <!-- <mkdir dir="${phpunit.browsertest_output_dir}" />
         <touch file="${phpunit.browsertest_output_file}" />
-    </target>
+    </target> -->
 
     <!-- Create demo users. -->
     <target name="create-demo-users" description="Create demo users.">
