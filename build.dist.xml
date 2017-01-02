@@ -221,10 +221,15 @@
         </composer>
     </target>
 
+    <!-- <target
+        name="build-dev"
+        description="Build a development environment."
+        depends="install-composer-dependencies, setup-behat, setup-php-codesniffer, setup-phpunit" /> -->
+
     <target
         name="build-dev"
         description="Build a development environment."
-        depends="install-composer-dependencies, setup-behat, setup-php-codesniffer, setup-phpunit" />
+        depends="install-composer-dependencies" />
 
     <target
         name="setup-dev"
