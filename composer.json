@@ -43,7 +43,9 @@
         "drupal/ds": "^2.6",
         "davidbarratt/custom-installer": "^1.0@alpha",
         "webflo/drupal-finder": "^0.2.1",
-        "webmozart/path-util": "^2.3"
+        "webmozart/path-util": "^2.3",
+        "drupal/console": "~1.0",
+        "williambe/wb_profile": "8.x-dev"
     },
     "require-dev": {
         "behat/mink": "~1.7",
