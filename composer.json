@@ -19,6 +19,10 @@
             "url": "git@github.com:williambe/wb_profile.git"
         },
         {
+            "type": "vcs",
+            "url": "git@github.com:williambe/pattern-lab-starter.git"
+        },
+        {
             "_comment": "The PhingDrushTask module does not currently have a D8 release and is not available on https://packages.drupal.org/8. See https://www.drupal.org/node/2817131.",
             "type": "vcs",
             "url": "git@github.com:pfrenssen/phingdrushtask.git"
