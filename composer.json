@@ -35,7 +35,8 @@
         "drupal/core": "~8.0",
         "drush/drush": "~8.0",
         "drupal/console": "~1.0",
-        "williambe/wb_profile": "dev-master"
+        "williambe/wb_profile": "dev-master",
+        "williambe/pattern-lab-starter": "dev-master"
     },
     "require-dev": {
         "behat/mink": "~1.7",
