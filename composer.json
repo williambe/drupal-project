@@ -19,8 +19,8 @@
             "url": "git@github.com:williambe/wb_profile.git"
         },
         {
-            "type": "vcs",
-            "url": "git@github.com:williambe/pattern-lab-starter.git"
+            "type": "git",
+            "url": "https://github.com/williambe/pattern-lab-starter"
         },
         {
             "_comment": "The PhingDrushTask module does not currently have a D8 release and is not available on https://packages.drupal.org/8. See https://www.drupal.org/node/2817131.",
@@ -36,7 +36,9 @@
         "drush/drush": "~8.0",
         "drupal/console": "~1.0",
         "williambe/wb_profile": "dev-master",
-        "williambe/pattern-lab-starter": "dev-starterkit_wb"
+        "williambe/pattern-lab-starter": "dev-starterkit_wb",
+        "drupal/ui_patterns": "^1.0@beta",
+        "drupal/field_group": "^1.0@RC"
     },
     "require-dev": {
         "behat/mink": "~1.7",
