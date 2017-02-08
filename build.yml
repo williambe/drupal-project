@@ -5,20 +5,20 @@
 # The project
 project:
   installed: false
-  machine_name: 'sandbox3'
+  machine_name: 'sandbox1' # EDIT
   human_name: 'Test phing'
   author: 'williambe'
   client: 'clientname'
   protocol: http
   hostname: 'clientsite.tld'
-  folder: 'drupalvm5_sandbox3'
+  folder: 'drupalvm5_sandbox1' # EDIT
   profile:
     # You can generate a custom profile by running '../vendor/bin/drupal generate:profile' from the docroot.
     name: 'wb_profile'
   theme:
     machine_name: 'pattern-lab-starter'
   local:
-    machine_name: local-${project.name}
+    machine_name: local-${project.machine_name}
     human_name: ~
     protocol: http
     hostname: www.${project.local.machine_name}.dev

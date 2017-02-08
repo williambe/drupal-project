@@ -19,7 +19,7 @@
 
   <target name="site-install">
         <drush command="site-install" root="${composer.drupalroot}" assume="yes">
-            <option name="locale" value=$"{drupal.locale}" />
+            <option name="locale" value="${drupal.locale}" />
             <option name="site-name" value="${drupal.site.name}" />
             <option name="account-name" value="${drupal.account.name}"/>
             <option name="account-pass" value="${drupal.account.password}"/>
