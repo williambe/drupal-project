@@ -17,6 +17,18 @@
 <!--     <mkdir dir="${composer.root}/${project.author}"/> -->  
   </target>
 
+  <!-- Make settings writeable -->
+  <target name="writable-settings">
+    <chmod mode="0755" failonerror="true" verbose="true" quiet="false" file="${composer.settingsroot}" />
+    <chmod mode="0644" failonerror="false" verbose="true" quiet="false" file="${composer.settingsroot}/settings.php" />
+  </target>
+
+  <!-- Secure settings permission -->
+  <target name="secure-settings">
+    <chmod mode="0555" failonerror="true" verbose="true" quiet="false" file="${composer.settingsroot}" />
+    <chmod mode="0444" failonerror="false" verbose="true" quiet="false" file="${composer.settingsroot}/settings.php" />
+  </target>
+
   <target name="site-install">
         <drush command="site-install" root="${composer.drupalroot}" assume="yes">
             <option name="locale" value="${drupal.locale}" />

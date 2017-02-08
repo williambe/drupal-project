@@ -29,6 +29,7 @@ composer:
   template: 'https://github.com/williambe/drupal-project.git'
   root: '/var/www/${project.folder}'
   drupalroot: ${composer.root}/web
+  settingsroot: ${composer.root}/web/sites/default
   themeroot: ${composer.root}/web/themes/contrib/${project.theme.machine_name}
   phingdrushimport: ${composer.root}/vendor/drupal/phingdrushtask/import.xml" />
 
