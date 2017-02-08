@@ -39,7 +39,7 @@ git:
 
 # Drupal install. These are used for installing Drupal.
 drupal:
-  locale: it
+  locale: en
   account:
     name: admin
     password: admin

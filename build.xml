@@ -7,12 +7,13 @@
   <property file="build.yml"/>
 
   <!-- Import drush tasks -->
-  <import file="${composer.phingdrushimport}" />
+  <import file="./vendor/drupal/phingdrushtask/import.xml" />
 
   <target name="debug">
     <echo>themeroot property: ${composer.themeroot}</echo>
         <echo>drupalroot property: ${composer.drupalroot}</echo>
         <echo>db-url property: ${drupal.db.url}</echo>
+        <echo>phing drush import dir property ${composer.phingdrushimport}</echo>
 <!--     <mkdir dir="${composer.root}/${project.author}"/> -->  
   </target>
 
