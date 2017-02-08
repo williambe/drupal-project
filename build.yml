@@ -1,0 +1,60 @@
+# Properties configuration
+# @see https://github.com/acquia/blt/blob/8.x/template/blt/project.yml
+# --------------------
+
+# The project
+project:
+  installed: false
+  machine_name: 'sandbox3'
+  human_name: 'Test phing'
+  author: 'williambe'
+  client: 'clientname'
+  protocol: http
+  hostname: 'clientsite.tld'
+  folder: 'drupalvm5_sandbox3'
+  profile:
+    # You can generate a custom profile by running '../vendor/bin/drupal generate:profile' from the docroot.
+    name: 'wb_profile'
+  theme:
+    machine_name: 'pattern-lab-starter'
+  local:
+    machine_name: local-${project.name}
+    human_name: ~
+    protocol: http
+    hostname: www.${project.local.machine_name}.dev
+
+# File and Directory locations.
+# docroot.relative: ${repo.root.relative}/docroot
+composer:
+  template: 'https://github.com/williambe/drupal-project.git'
+  root: '/var/www/${project.folder}'
+  drupalroot: ${composer.root}/web
+  themeroot: ${composer.root}/web/themes/contrib/${project.theme.machine_name}
+  phingdrushimport: ${composer.root}/vendor/drupal/phingdrushtask/import.xml" />
+
+git:
+  default_branch: master
+  remotes: []
+  repo: ${project.author}/${project.name}
+
+# Drupal install. These are used for installing Drupal.
+drupal:
+  locale: it
+  account:
+    name: admin
+    password: admin
+    mail: no-reply@willbe.it
+  db:
+    type: mysql
+    name: drupal_${project.machine_name}
+    user: root
+    password: root
+    host: 127.0.0.1
+    port: 3306
+    url: ${drupal.db.type}://${drupal.db.user}:${drupal.db.password}@${drupal.db.host}:${drupal.db.port}/${drupal.db.name}
+  site:
+    name: ${project.human_name}
+    default_country: IT
+    default_time_zone: Europe/Rome
+    check_for_updates: false
+

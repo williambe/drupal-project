@@ -1,19 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<project name="My Drupal Project" default="help">
+<project name="Drupal Project" default="help">
 
-    <!-- Import local Phing targets. -->
-    <import file="${project.basedir}/build.local.xml" optional="true" />
 
-    <!-- Import project specific Phing targets. -->
-    <import file="${project.basedir}/build.project.xml" optional="true" />
+  <!-- Import build properties. -->
+  <property file="build.yml"/>
 
-    <!-- Import main Phing targets. -->
-    <import file="${project.basedir}/build.dist.xml" />
+  <!-- Import drush tasks -->
+  <import file="${composer.phingdrushimport}" />
 
-    <!-- Import build properties. -->
-    <property file="build.properties.local" />
-    <property file="build.properties" />
-    <property file="build.properties.dist" />
+  <target name="debug">
+    <echo>themeroot property: ${composer.themeroot}</echo>
+        <echo>drupalroot property: ${composer.drupalroot}</echo>
+        <echo>db-url property: ${drupal.db.url}</echo>
+<!--     <mkdir dir="${composer.root}/${project.author}"/> -->  
+  </target>
+
+  <target name="site-install">
+        <drush command="site-install" root="${composer.drupalroot}" assume="yes">
+            <option name="locale" value=$"{drupal.locale}" />
+            <option name="site-name" value="${drupal.site.name}" />
+            <option name="account-name" value="${drupal.account.name}"/>
+            <option name="account-pass" value="${drupal.account.password}"/>
+            <option name="account-mail" value="${drupal.account.mail}"/>
+            <option name="db-url" value="${drupal.db.url}"/>
+            <!-- <option name="db-url" value="mysql://root:root@localhost/drupal_sandbox3"/> -->
+            <param>${project.profile.name}</param>
+        </drush> 
+    </target>
+
+  <target name="frontend" description="Runs frontend target">
+        <exec command="npm install" dir="./web/themes/contrib/pattern-lab-starter" passthru="true" description="frontend, install theme dependency"/>
+        <exec command="npm run compile" dir="./web/themes/contrib/pattern-lab-starter" passthru="true" description="frontend, compile "/>
+    </target>
 
 </project>
