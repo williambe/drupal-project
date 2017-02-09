@@ -38,7 +38,8 @@
         "williambe/pattern-lab-starter": "dev-starterkit_wb",
         "drupal/ui_patterns": "^1.0@beta",
         "drupal/field_group": "^1.0@RC",
-        "drupal/features": "^3.2"
+        "drupal/features": "^3.2",
+        "drupal/ds": "^2.6"
     },
     "require-dev": {
         "behat/mink": "~1.7",
@@ -87,7 +88,11 @@
         },
         "_comment_patches": "Temporarily enabling patches on chained composer.json until config_installer is on core",
         "patches": {
-            "enable-patching" : true
+            "enable-patching" : true,
+            "drupal/core": {
+                "Stable theme does not respect visually hidden field label display option": "https://www.drupal.org/files/issues/stable_theme_does_not-2779919-10.patch"     
+            }
+
         }
     }
 }
