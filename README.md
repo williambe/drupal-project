@@ -44,8 +44,10 @@ When installing the given `composer.json` some tasks are taken care of:
 * Drupal will be installed in the `web`-directory.
 * Autoloader is implemented to use the generated composer autoloader in `vendor/autoload.php`,
   instead of the one provided by Drupal (`web/vendor/autoload.php`).
-* Modules (packages of type `drupal-module`) will be placed in `web/modules/contrib/`
-* Theme (packages of type `drupal-theme`) will be placed in `web/themes/contrib/`
+* Contrib Modules (packages of type `drupal-module`) will be placed in `web/modules/contrib/`
+* Custom Modules (packages of type `drupal-custom-module`) will be placed in `web/modules/custom/`
+* Contrib Theme (packages of type `drupal-theme`) will be placed in `web/themes/contrib/`
+* Custom Theme (packages of type `drupal-custom-theme`) will be placed in `web/themes/custom/`
 * Profiles (packages of type `drupal-profile`) will be placed in `web/profiles/contrib/`
 * Creates default writable versions of `settings.php` and `services.yml`.
 * Creates `sites/default/files`-directory.
