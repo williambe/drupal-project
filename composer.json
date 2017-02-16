@@ -39,7 +39,8 @@
         "drupal/ui_patterns": "^1.0@beta",
         "drupal/field_group": "^1.0@RC",
         "drupal/features": "^3.2",
-        "drupal/ds": "^2.6"
+        "drupal/ds": "^2.6",
+        "davidbarratt/custom-installer": "^1.0@alpha"
     },
     "require-dev": {
         "behat/mink": "~1.7",
@@ -87,6 +88,9 @@
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "web/themes/custom/{$name}": ["type:drupal-custom-theme"],
             "drush/contrib/{$name}": ["type:drupal-drush"]
+        },
+        "custom-installer": {
+            "web/modules/features/{$name}": ["type:drupal-features-module"]
         },
         "_comment_patches": "Temporarily enabling patches on chained composer.json until config_installer is on core",
         "patches": {
