@@ -5574,14 +5574,14 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:williambe/avvguerra-starter.git",
-                "reference": "0c21091f4dac6da40acf4e07623970812e87a42c"
+                "reference": "5109d7af5d52fcce0b7ffd9b7068486cd2c91b6e"
             },
             "type": "drupal-custom-theme",
             "license": [
                 "GPL-2.0+"
             ],
             "description": "Avvocato Guerra Starter",
-            "time": "2017-03-03 11:29:28"
+            "time": "2017-03-03 12:25:57"
         },
         {
             "name": "williambe/wb_profile",

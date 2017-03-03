@@ -22,3 +22,5 @@ console/log
 
 #Error Log
 web/error_log
+npm-debug.log
+node_modules
