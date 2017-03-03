@@ -5,13 +5,13 @@
 # The project
 project:
   installed: false
-  machine_name: 'sandbox1' # EDIT
-  human_name: 'Test phing' # EDIT
+  machine_name: 'ag' # EDIT
+  human_name: 'Avvocato Guerra' # EDIT
   author: 'williambe'
-  client: 'clientname' # EDIT
+  client: 'Studio Legale Associato Guerra' # EDIT
   protocol: http
-  hostname: 'clientsite.tld' # EDIT
-  folder: 'drupalvm5_sandbox1' # EDIT
+  hostname: 'avvocatoguerra.it' # EDIT
+  folder: 'ag' # EDIT
   profile:
     # You can generate a custom profile by running '../vendor/bin/drupal generate:profile' from the docroot.
     name: 'wb_profile'
@@ -40,7 +40,7 @@ git:
 
 # Drupal install. These are used for installing Drupal.
 drupal:
-  locale: en
+  locale: it
   account:
     name: admin
     password: admin
