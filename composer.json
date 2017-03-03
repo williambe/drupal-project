@@ -20,7 +20,7 @@
         },
         {
             "type": "git",
-            "url": "https://github.com/williambe/pattern-lab-starter"
+            "url": "git@bitbucket.org:williambe/avvguerra-starter.git"
         },
         {
           "type": "vcs",
@@ -35,7 +35,7 @@
         "drush/drush": "~8.0",
         "drupal/console": "~1.0",
         "williambe/wb_profile": "dev-master",
-        "williambe/pattern-lab-starter": "dev-starterkit_wb",
+        "williambe/avvguerra-starter": "dev-avvguerra-starter",
         "drupal/ui_patterns": "^1.0@beta",
         "drupal/field_group": "^1.0@RC",
         "drupal/features": "^3.2",

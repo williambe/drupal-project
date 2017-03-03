@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "759d9c8b02a393576e740640a5b8a77e",
-    "content-hash": "08d3c8cdabbfe22f54cd93de2e25bb38",
+    "hash": "51331dbb6173a3ba0728116083a663cf",
+    "content-hash": "f2bf3ea8619b9e2b618597a4ef8cfeb2",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1121,7 +1121,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-1.18.zip",
-                "reference": null,
+                "reference": "8.x-1.18",
                 "shasum": "ea5b6b5eb20757fda12e7220819a750e2575359b"
             },
             "require": {
@@ -1181,7 +1181,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/adminimal_admin_toolbar-8.x-1.3.zip",
-                "reference": null,
+                "reference": "8.x-1.3",
                 "shasum": "6e2b1fc80fece1f68895269713d5aa7e1cb220a5"
             },
             "require": {
@@ -1226,7 +1226,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/adminimal_theme-8.x-1.3.zip",
-                "reference": null,
+                "reference": "8.x-1.3",
                 "shasum": "bb9f280bcdbd7e4d384a925c685a2aa1feed8419"
             },
             "require": {
@@ -1334,7 +1334,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/components-8.x-1.0.zip",
-                "reference": null,
+                "reference": "8.x-1.0",
                 "shasum": "adb1872a655466d575c2d3396f7ca2daba0a2918"
             },
             "require": {
@@ -1377,7 +1377,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/config_update-8.x-1.3.zip",
-                "reference": null,
+                "reference": "8.x-1.3",
                 "shasum": "4fc57add91c090ea3c9ed4848579b450253b1eed"
             },
             "require": {
@@ -1934,7 +1934,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/ds-8.x-2.6.zip",
-                "reference": null,
+                "reference": "8.x-2.6",
                 "shasum": "6cec63a526b31f90b57d8958348280fb05ff8bec"
             },
             "require": {
@@ -2004,7 +2004,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/entity_reference_revisions-8.x-1.2.zip",
-                "reference": null,
+                "reference": "8.x-1.2",
                 "shasum": "15261a4237cc2a743522a7bd81e9f34e01d12843"
             },
             "require": {
@@ -2058,7 +2058,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/features-8.x-3.4.zip",
-                "reference": null,
+                "reference": "8.x-3.4",
                 "shasum": "7d0a1be440564a37fda9dd5fb8e75398b2d0ee35"
             },
             "require": {
@@ -2126,7 +2126,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/field_group-8.x-1.0-rc6.zip",
-                "reference": null,
+                "reference": "8.x-1.0-rc6",
                 "shasum": "1ce3c6387e745a04a1099956a5bf39bb50096d44"
             },
             "require": {
@@ -2185,7 +2185,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/layout_plugin-8.x-1.0-alpha23.zip",
-                "reference": null,
+                "reference": "8.x-1.0-alpha23",
                 "shasum": "c79992e2f52ac6a7c8dc0706512f2c70fc9f5e11"
             },
             "require": {
@@ -2293,7 +2293,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/paragraphs-8.x-1.1.zip",
-                "reference": null,
+                "reference": "8.x-1.1",
                 "shasum": "c678e5704a98c6a0549e415412da081cfeb03a00"
             },
             "require": {
@@ -2552,7 +2552,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/ui_patterns-8.x-1.0-beta5.zip",
-                "reference": null,
+                "reference": "8.x-1.0-beta5",
                 "shasum": "94bcdf94de5a3d6430d3f713f512ab7befe8c1cb"
             },
             "require": {
@@ -5569,25 +5569,19 @@
             "time": "2015-12-17 08:42:14"
         },
         {
-            "name": "williambe/pattern-lab-starter",
-            "version": "dev-starterkit_wb",
+            "name": "williambe/avvguerra-starter",
+            "version": "dev-avvguerra-starter",
             "source": {
                 "type": "git",
-                "url": "https://github.com/williambe/pattern-lab-starter",
-                "reference": "520af7f993e4bfc436192f160ec9c7e25eac610d"
+                "url": "git@bitbucket.org:williambe/avvguerra-starter.git",
+                "reference": "0c21091f4dac6da40acf4e07623970812e87a42c"
             },
-            "type": "drupal-theme",
+            "type": "drupal-custom-theme",
             "license": [
                 "GPL-2.0+"
             ],
-            "description": "Pattern Lab Starter",
-            "homepage": "https://github.com/phase2/pattern-lab-starter",
-            "keywords": [
-                "Drupal",
-                "pattern-lab",
-                "prototyping"
-            ],
-            "time": "2017-03-02 13:48:22"
+            "description": "Avvocato Guerra Starter",
+            "time": "2017-03-03 11:29:28"
         },
         {
             "name": "williambe/wb_profile",
@@ -7313,13 +7307,34 @@
             "description": "Symfony BrowserKit Component",
             "homepage": "https://symfony.com",
             "time": "2017-01-31 21:49:23"
+        },
+        {
+            "name": "williambe/pattern-lab-starter",
+            "version": "dev-starterkit_wb",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/williambe/pattern-lab-starter",
+                "reference": "520af7f993e4bfc436192f160ec9c7e25eac610d"
+            },
+            "type": "drupal-theme",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Pattern Lab Starter",
+            "homepage": "https://github.com/phase2/pattern-lab-starter",
+            "keywords": [
+                "Drupal",
+                "pattern-lab",
+                "prototyping"
+            ],
+            "time": "2017-03-02 13:48:22"
         }
     ],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
         "williambe/wb_profile": 20,
-        "williambe/pattern-lab-starter": 20,
+        "williambe/avvguerra-starter": 20,
         "drupal/ui_patterns": 10,
         "drupal/field_group": 5,
         "davidbarratt/custom-installer": 15
