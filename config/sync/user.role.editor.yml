@@ -1,0 +1,11 @@
+uuid: 27349dd7-a0b9-41e5-8d62-db407bb471a5
+langcode: it
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: L3tUE_c6lAQ8JnmKky-YVQqsR_ixqFiSxu_-iFEtN0M
+id: editor
+label: Editor
+weight: 2
+is_admin: false
+permissions: {  }

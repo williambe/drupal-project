@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "51331dbb6173a3ba0728116083a663cf",
-    "content-hash": "f2bf3ea8619b9e2b618597a4ef8cfeb2",
+    "hash": "db4f4467e763b893b6da26bdfb71b610",
+    "content-hash": "fd1a092b17aa7e51a6dad24a28e50975",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1262,6 +1262,57 @@
             }
         },
         {
+            "name": "drupal/bg_image_formatter",
+            "version": "1.0.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/bg_image_formatter",
+                "reference": "8.x-1.0-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/bg_image_formatter-8.x-1.0-beta1.zip",
+                "reference": "8.x-1.0-beta1",
+                "shasum": "11702a0c9dffe5b595245485fa607dca5dd892ff"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta1",
+                    "datestamp": "1480968483"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "DuaelFr",
+                    "homepage": "https://www.drupal.org/user/931394"
+                },
+                {
+                    "name": "Pol",
+                    "homepage": "https://www.drupal.org/user/47194"
+                },
+                {
+                    "name": "garethhallnz",
+                    "homepage": "https://www.drupal.org/user/772766"
+                }
+            ],
+            "description": "Background Images Formatter provides an image formatter to display images in background with CSS.",
+            "homepage": "https://www.drupal.org/project/bg_image_formatter",
+            "support": {
+                "source": "http://cgit.drupalcode.org/bg_image_formatter"
+            }
+        },
+        {
             "name": "drupal/coffee",
             "version": "dev-1.x",
             "source": {
@@ -2481,6 +2532,49 @@
                 "source": "http://cgit.drupalcode.org/redirect"
             },
             "time": "2017-02-14 17:01:14"
+        },
+        {
+            "name": "drupal/simple_background_image_formatter",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/simple_background_image_formatter",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/simple_background_image_formatter-8.x-1.1.zip",
+                "reference": null,
+                "shasum": "ae6f6322a123e62c9737e7c4a33854a688d9ebb4"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1478165039"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "legolasbo",
+                    "homepage": "https://www.drupal.org/user/2480548"
+                }
+            ],
+            "description": "Provides a field formatter which allows images to be formatted as a css background-image instead of an actual html img tag.",
+            "homepage": "https://www.drupal.org/project/simple_background_image_formatter",
+            "support": {
+                "source": "http://cgit.drupalcode.org/simple_background_image_formatter"
+            }
         },
         {
             "name": "drupal/token",
@@ -5584,6 +5678,42 @@
             "time": "2017-03-03 12:25:57"
         },
         {
+            "name": "williambe/wb_article",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:williambe/wb_article.git",
+                "reference": "889990e3706871768c919174f693594ff7b5778d"
+            },
+            "type": "drupal-features-module",
+            "description": "Provides Article content type and related configuration.",
+            "time": "2017-02-16 16:18:00"
+        },
+        {
+            "name": "williambe/wb_core",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:williambe/wb_core.git",
+                "reference": "aae725b404b344d05c51d1170fbccc7092f05480"
+            },
+            "type": "drupal-features-module",
+            "description": "Handles general site configuration.",
+            "time": "2017-02-16 16:51:28"
+        },
+        {
+            "name": "williambe/wb_paragraphs",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:williambe/wb_paragraphs.git",
+                "reference": "709ad2ca5a524756a87f9fa92a23a46d0b8af5b8"
+            },
+            "type": "drupal-features-module",
+            "description": "Handles paragraphs type and related fields.",
+            "time": "2017-02-16 14:13:41"
+        },
+        {
             "name": "williambe/wb_profile",
             "version": "dev-master",
             "source": {
@@ -7337,7 +7467,11 @@
         "williambe/avvguerra-starter": 20,
         "drupal/ui_patterns": 10,
         "drupal/field_group": 5,
-        "davidbarratt/custom-installer": 15
+        "davidbarratt/custom-installer": 15,
+        "williambe/wb_core": 20,
+        "williambe/wb_article": 20,
+        "williambe/wb_paragraphs": 20,
+        "drupal/bg_image_formatter": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,

@@ -1,0 +1,7 @@
+uuid: 78e58563-3113-44fd-8ca3-17691ca97428
+langcode: it
+status: true
+dependencies: {  }
+id: text
+label: Testo
+behavior_plugins: {  }

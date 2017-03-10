@@ -1,0 +1,20 @@
+uuid: 6f775197-b8af-49ef-a4b0-3ac9d85aac08
+langcode: it
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - patternlab
+id: breadcrumb
+theme: patternlab
+region: content
+weight: -3
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumb
+  provider: system
+  label_display: visible
+visibility: {  }

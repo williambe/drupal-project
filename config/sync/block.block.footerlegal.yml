@@ -1,0 +1,25 @@
+uuid: ab8fb70c-7bf7-46b6-9d02-0a0507ea3da9
+langcode: it
+status: true
+dependencies:
+  content:
+    - 'block_content:static:b5018a60-5bb8-44ff-94ea-2824d7c4bf5c'
+  module:
+    - block_content
+  theme:
+    - patternlab
+id: footerlegal
+theme: patternlab
+region: footer
+weight: 1
+provider: null
+plugin: 'block_content:b5018a60-5bb8-44ff-94ea-2824d7c4bf5c'
+settings:
+  id: 'block_content:b5018a60-5bb8-44ff-94ea-2824d7c4bf5c'
+  label: 'footer legal'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: 1f11c02a-fa0f-4611-86b8-e3f59859f1fb
+langcode: it
+status: true
+dependencies:
+  content:
+    - 'block_content:molecule:7bc165c4-52fa-446b-b2eb-1d00f5895012'
+  module:
+    - block_content
+  theme:
+    - patternlab
+id: footerbranding
+theme: patternlab
+region: footer
+weight: -2
+provider: null
+plugin: 'block_content:7bc165c4-52fa-446b-b2eb-1d00f5895012'
+settings:
+  id: 'block_content:7bc165c4-52fa-446b-b2eb-1d00f5895012'
+  label: footer-branding
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,23 @@
+uuid: 8262b333-dc1a-4d80-a3e6-3c0c82eb5d8c
+langcode: it
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - patternlab
+id: brandingdelsito
+theme: patternlab
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Branding del sito'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

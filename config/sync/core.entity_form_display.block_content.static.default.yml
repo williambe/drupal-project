@@ -1,0 +1,35 @@
+uuid: 0e680874-572e-4651-961a-359d05cac788
+langcode: it
+status: true
+dependencies:
+  config:
+    - block_content.type.static
+    - field.field.block_content.static.body
+  module:
+    - text
+id: block_content.static.default
+targetEntityType: block_content
+bundle: static
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 3
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

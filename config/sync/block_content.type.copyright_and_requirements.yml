@@ -1,0 +1,8 @@
+uuid: 6ec75039-355f-4f4d-b3fe-eab817e762cc
+langcode: it
+status: true
+dependencies: {  }
+id: copyright_and_requirements
+label: 'Copyright and requirements'
+revision: 0
+description: ''

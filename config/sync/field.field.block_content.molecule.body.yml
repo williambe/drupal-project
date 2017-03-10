@@ -1,0 +1,22 @@
+uuid: a49a37d5-11a6-457a-b003-4e191c2b836c
+langcode: it
+status: true
+dependencies:
+  config:
+    - block_content.type.molecule
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.molecule.body
+field_name: body
+entity_type: block_content
+bundle: molecule
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

@@ -1,0 +1,22 @@
+uuid: 20af1806-21ed-4547-9c40-f6b033d3a8a1
+langcode: it
+status: true
+dependencies:
+  config:
+    - block_content.type.molecule
+    - field.field.block_content.molecule.body
+  module:
+    - text
+id: block_content.molecule.default
+targetEntityType: block_content
+bundle: molecule
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

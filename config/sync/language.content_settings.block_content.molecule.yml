@@ -1,0 +1,11 @@
+uuid: b2e00a4c-17f1-443c-856f-6b823f414caa
+langcode: it
+status: true
+dependencies:
+  config:
+    - block_content.type.molecule
+id: block_content.molecule
+target_entity_type_id: block_content
+target_bundle: molecule
+default_langcode: site_default
+language_alterable: false

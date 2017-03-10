@@ -1,0 +1,19 @@
+uuid: e0c7bd4a-d883-4d65-b627-e60b311ae7bb
+langcode: it
+status: true
+dependencies:
+  config:
+    - block_content.type.copyright_and_requirements
+    - field.storage.block_content.field_site_owner
+id: block_content.copyright_and_requirements.field_site_owner
+field_name: field_site_owner
+entity_type: block_content
+bundle: copyright_and_requirements
+label: 'site owner'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

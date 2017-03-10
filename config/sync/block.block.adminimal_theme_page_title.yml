@@ -1,0 +1,20 @@
+uuid: 1d6cf39c-e203-460d-8211-b34d53723991
+langcode: it
+status: true
+dependencies:
+  theme:
+    - adminimal_theme
+_core:
+  default_config_hash: Z3nlZUh2mSJP3apMrJWt-duS-aLyP79rcfu_0wpPmDs
+id: adminimal_theme_page_title
+theme: adminimal_theme
+region: header
+weight: -30
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Titolo della pagina'
+  provider: core
+  label_display: '0'
+visibility: {  }

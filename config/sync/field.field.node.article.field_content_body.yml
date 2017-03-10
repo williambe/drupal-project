@@ -1,0 +1,26 @@
+uuid: fba8f2c3-f91d-494e-be6b-a54ae47ce529
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_body
+    - node.type.article
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: z25IYzZ0rk7ys43wDEtPt3C6x5IAB66riCiO6XcDRZ0
+id: node.article.field_content_body
+field_name: field_content_body
+entity_type: node
+bundle: article
+label: 'Content body'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+field_type: entity_reference_revisions

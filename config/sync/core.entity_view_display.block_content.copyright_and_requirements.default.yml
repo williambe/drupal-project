@@ -1,0 +1,29 @@
+uuid: 7210accb-2313-4fd0-bdfa-88049d5a8ed8
+langcode: it
+status: true
+dependencies:
+  config:
+    - block_content.type.copyright_and_requirements
+    - field.field.block_content.copyright_and_requirements.field_p_iva
+    - field.field.block_content.copyright_and_requirements.field_site_owner
+id: block_content.copyright_and_requirements.default
+targetEntityType: block_content
+bundle: copyright_and_requirements
+mode: default
+content:
+  field_p_iva:
+    weight: 0
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_site_owner:
+    weight: 1
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+hidden:
+  langcode: true

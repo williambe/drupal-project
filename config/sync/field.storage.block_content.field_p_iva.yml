@@ -1,0 +1,21 @@
+uuid: da0b4944-a777-4a63-bce3-b5056cda961b
+langcode: it
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.field_p_iva
+field_name: field_p_iva
+entity_type: block_content
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,20 @@
+uuid: 8fd3fc3a-8d16-4386-ae25-d165cb1d1718
+langcode: it
+status: true
+dependencies:
+  config:
+    - node.type.article
+_core:
+  default_config_hash: Gv9D2woYlLHyBe9EMecxjVkiNszOBSNwICK7t9iCNrU
+id: node.article.title
+field_name: title
+entity_type: node
+bundle: article
+label: Label
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

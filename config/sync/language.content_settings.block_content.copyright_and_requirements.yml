@@ -1,0 +1,11 @@
+uuid: 1c71384c-ef1e-47cc-95f9-f932eb6ec4b7
+langcode: it
+status: true
+dependencies:
+  config:
+    - block_content.type.copyright_and_requirements
+id: block_content.copyright_and_requirements
+target_entity_type_id: block_content
+target_bundle: copyright_and_requirements
+default_langcode: site_default
+language_alterable: false

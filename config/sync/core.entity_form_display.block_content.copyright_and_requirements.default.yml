@@ -1,0 +1,40 @@
+uuid: 36895ae6-a0fe-444e-832b-430399794866
+langcode: it
+status: true
+dependencies:
+  config:
+    - block_content.type.copyright_and_requirements
+    - field.field.block_content.copyright_and_requirements.field_p_iva
+    - field.field.block_content.copyright_and_requirements.field_site_owner
+id: block_content.copyright_and_requirements.default
+targetEntityType: block_content
+bundle: copyright_and_requirements
+mode: default
+content:
+  field_p_iva:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_site_owner:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  info:
+    type: string_textfield
+    weight: -5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

@@ -23,6 +23,18 @@
             "url": "git@bitbucket.org:williambe/avvguerra-starter.git"
         },
         {
+            "type": "git",
+            "url": "git@bitbucket.org:williambe/wb_article.git"
+        },
+        {
+            "type": "git",
+            "url": "git@bitbucket.org:williambe/wb_core.git"
+        },
+        {
+            "type": "git",
+            "url": "git@bitbucket.org:williambe/wb_paragraphs.git"
+        },
+        {
           "type": "vcs",
           "url": "https://git.drupal.org/project/phingdrushtask.git"
         }
@@ -40,7 +52,12 @@
         "drupal/field_group": "^1.0@RC",
         "drupal/features": "^3.2",
         "drupal/ds": "^2.6",
-        "davidbarratt/custom-installer": "^1.0@alpha"
+        "davidbarratt/custom-installer": "^1.0@alpha",
+        "williambe/wb_core": "dev-master",
+        "williambe/wb_article": "dev-master",
+        "williambe/wb_paragraphs": "dev-master",
+        "drupal/bg_image_formatter": "^1.0@beta",
+        "drupal/simple_background_image_formatter": "^1.1"
     },
     "require-dev": {
         "behat/mink": "~1.7",

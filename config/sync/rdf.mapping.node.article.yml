@@ -1,0 +1,16 @@
+uuid: 2ab47290-38fa-4342-a3e2-14c1c53b2b1e
+langcode: it
+status: true
+dependencies:
+  config:
+    - node.type.article
+  module:
+    - node
+_core:
+  default_config_hash: DM5tfWxbUmYIoZVBczBDRuG3hh9LySz9dXYaHf0HMzU
+id: node.article
+targetEntityType: node
+bundle: article
+types:
+  - 'schema:WebPage'
+fieldMappings: {  }

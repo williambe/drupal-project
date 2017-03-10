@@ -1,0 +1,11 @@
+uuid: 0e08d7c9-3557-4076-8f9c-68bba1a15090
+langcode: it
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 2kicQdvATyyopu46qRVU05GXfiAM__sHPaEUa26xegM
+id: '404'
+label: '404 page not found'
+tags:
+  canonical_url: '[site:url]'
+  shortlink: '[site:url]'

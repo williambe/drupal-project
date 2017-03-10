@@ -1,0 +1,14 @@
+name: 'Avvocato Guerra'
+mail: admin@example.com
+slogan: 'willbe test site'
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: it
+default_langcode: it
+_core:
+  default_config_hash: K6A1f3dGOYXHFy2J6u0jhpBzeShaLg7OykUt8ucNNek
+uuid: 63930afd-1429-4237-9729-f7f2d9a215d2

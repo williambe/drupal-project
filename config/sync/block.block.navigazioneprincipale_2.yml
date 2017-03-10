@@ -1,0 +1,24 @@
+uuid: 29c2be04-8d84-4763-80ac-6175b9544cb7
+langcode: it
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - patternlab
+id: navigazioneprincipale_2
+theme: patternlab
+region: footer
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Navigazione principale'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

@@ -1,0 +1,41 @@
+uuid: 54b73685-a155-4fcf-aff3-05e590713202
+langcode: it
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: i-VcHU_FaDboyCrnaC7_5wEZ5HmD8mqj4tpC0Mgclxs
+id: paragraph.field_heading_level
+field_name: field_heading_level
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: h1
+      label: h1
+    -
+      value: h2
+      label: h2
+    -
+      value: h3
+      label: h3
+    -
+      value: h4
+      label: h4
+    -
+      value: h5
+      label: h5
+    -
+      value: h6
+      label: h6
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 6
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

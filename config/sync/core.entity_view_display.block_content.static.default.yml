@@ -1,0 +1,22 @@
+uuid: 70ec00aa-07ce-4858-a130-646a5411d146
+langcode: it
+status: true
+dependencies:
+  config:
+    - block_content.type.static
+    - field.field.block_content.static.body
+  module:
+    - text
+id: block_content.static.default
+targetEntityType: block_content
+bundle: static
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

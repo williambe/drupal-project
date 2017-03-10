@@ -1,0 +1,21 @@
+uuid: 293d551f-ad60-4e61-b85e-cbcf0706c00e
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_title
+    - node.type.article
+_core:
+  default_config_hash: T6o8fT7dSpeF43r_aYinpZkXT25uNwN9_vVblZg4C-U
+id: node.article.field_title
+field_name: field_title
+entity_type: node
+bundle: article
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

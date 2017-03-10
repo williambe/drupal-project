@@ -1,0 +1,19 @@
+uuid: dd713ab7-8183-4567-afa4-eb97d9fa02a6
+langcode: it
+status: true
+dependencies:
+  config:
+    - block_content.type.copyright_and_requirements
+    - field.storage.block_content.field_p_iva
+id: block_content.copyright_and_requirements.field_p_iva
+field_name: field_p_iva
+entity_type: block_content
+bundle: copyright_and_requirements
+label: P.IVA
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

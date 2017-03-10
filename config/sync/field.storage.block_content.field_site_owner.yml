@@ -1,0 +1,21 @@
+uuid: cb70500a-8967-4311-9199-837335e4e0fb
+langcode: it
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.field_site_owner
+field_name: field_site_owner
+entity_type: block_content
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

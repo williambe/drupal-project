@@ -1,0 +1,25 @@
+uuid: ab69325c-fefb-4fdf-a7e3-39ce26ca553e
+langcode: it
+status: true
+dependencies:
+  content:
+    - 'block_content:copyright_and_requirements:8b72b905-95e0-4d8c-9d6a-20407798f113'
+  module:
+    - block_content
+  theme:
+    - patternlab
+id: copyrightandrequirements
+theme: patternlab
+region: footer
+weight: -1
+provider: null
+plugin: 'block_content:8b72b905-95e0-4d8c-9d6a-20407798f113'
+settings:
+  id: 'block_content:8b72b905-95e0-4d8c-9d6a-20407798f113'
+  label: 'Copyright and requirements'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
