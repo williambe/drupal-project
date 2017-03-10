@@ -5,7 +5,6 @@
 /web/modules/contrib/
 /web/themes/contrib/
 /web/profiles/contrib/
-/web/
 
 # Ignore Drupal's file directory
 /web/sites/*/files/
@@ -24,3 +23,6 @@ console/log
 web/error_log
 npm-debug.log
 node_modules
+services.yml
+settings.local.php
+settings.php
