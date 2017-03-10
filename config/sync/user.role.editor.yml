@@ -8,4 +8,27 @@ id: editor
 label: Editor
 weight: 2
 is_admin: false
-permissions: {  }
+permissions:
+  - 'administer blocks'
+  - 'access coffee'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'use text format restricted_html'
+  - 'access content overview'
+  - 'revert all revisions'
+  - 'view all revisions'
+  - 'view own unpublished content'
+  - 'create article content'
+  - 'delete own article content'
+  - 'edit any article content'
+  - 'create url aliases'
+  - 'access in-place editing'
+  - 'use advanced search'
+  - 'search content'
+  - 'customize shortcut links'
+  - 'administer menu'
+  - 'access administration pages'
+  - 'access site in maintenance mode'
+  - 'view the administration theme'
+  - 'administer taxonomy'
+  - 'access toolbar'

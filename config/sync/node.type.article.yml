@@ -11,7 +11,7 @@ third_party_settings:
     parent: 'main:'
 _core:
   default_config_hash: yBjmRLao-oYBVQxctsqSjHhwXsW6q6V5X0bw94WUv6Q
-name: Article
+name: Articolo
 type: article
 description: '<em>Articles</em> is the base content type. Adding content chunk through <a href="https://www.drupal.org/project/paragraphs">paragraphs</a> or other embeddable entities turn it into more specific content case.'
 help: ''

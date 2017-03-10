@@ -57,7 +57,8 @@
         "williambe/wb_article": "dev-master",
         "williambe/wb_paragraphs": "dev-master",
         "drupal/bg_image_formatter": "^1.0@beta",
-        "drupal/simple_background_image_formatter": "^1.1"
+        "drupal/simple_background_image_formatter": "^1.1",
+        "drupal/config_installer": "^1.4"
     },
     "require-dev": {
         "behat/mink": "~1.7",
