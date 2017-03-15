@@ -1,0 +1,10 @@
+id: breadcrumbs
+label: 'breadcrumb in content'
+ui_limit: ''
+properties:
+  block: system_breadcrumb_block
+  use_block_title: true
+type: block
+type_label: 'Block field'
+entities:
+  node: node

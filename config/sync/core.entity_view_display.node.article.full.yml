@@ -1,0 +1,155 @@
+uuid: d518e3c1-a8b9-4403-95e6-d60e0003ac44
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.article.field_content_body
+    - field.field.node.article.field_meta_tags
+    - field.field.node.article.field_seo_title
+    - field.field.node.article.field_summary
+    - field.field.node.article.field_temp_image
+    - field.field.node.article.field_title
+    - node.type.article
+  module:
+    - ds
+    - entity_reference_revisions
+    - metatag
+    - simple_background_image_formatter
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: wb_one_column
+      path: themes/custom/avvguerra-starter
+      library: ''
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      cover_row:
+        - field_temp_image
+        - 'dynamic_block_field:node-breadcrumbs'
+      header_row:
+        - field_title
+        - node_title
+        - field_summary
+      metadata_row:
+        - 'bundle_field:node'
+        - node_author
+        - node_post_date
+        - node_submitted_by
+        - user
+        - node_changed_date
+      main_row:
+        - field_content_body
+        - links
+        - field_seo_title
+        - field_meta_tags
+        - langcode
+    fields:
+      'bundle_field:node':
+        plugin_id: 'bundle_field:node'
+        weight: 5
+        label: hidden
+        formatter: default
+      'dynamic_block_field:node-breadcrumbs':
+        plugin_id: 'dynamic_block_field:node-breadcrumbs'
+        weight: 1
+        label: hidden
+        formatter: default
+      node_author:
+        plugin_id: node_author
+        weight: 6
+        label: hidden
+        formatter: author
+      node_changed_date:
+        plugin_id: node_changed_date
+        weight: 10
+        label: hidden
+        formatter: ds_post_date_long
+      node_post_date:
+        plugin_id: node_post_date
+        weight: 7
+        label: hidden
+        formatter: ds_post_date_long
+      node_submitted_by:
+        plugin_id: node_submitted_by
+        weight: 8
+        label: hidden
+        formatter: ds_post_date_long
+      node_title:
+        plugin_id: node_title
+        weight: 3
+        label: hidden
+        formatter: default
+      user:
+        plugin_id: user
+        weight: 9
+        label: hidden
+        formatter: default
+_core:
+  default_config_hash: AHkQTQDPOJ3eXECLFGYmIMufkmmezFVR96EpdgI5z3E
+id: node.article.full
+targetEntityType: node
+bundle: article
+mode: full
+content:
+  field_content_body:
+    type: entity_reference_revisions_entity_view
+    weight: 11
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  field_meta_tags:
+    weight: 14
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+  field_seo_title:
+    weight: 13
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_summary:
+    weight: 4
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_temp_image:
+    type: simple_background_image
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+      class: cover
+      tag: div
+    third_party_settings: {  }
+  field_title:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  langcode:
+    type: language
+    weight: 15
+    label: above
+    settings:
+      link_to_entity: false
+      native_language: false
+    third_party_settings: {  }
+  links:
+    weight: 12
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

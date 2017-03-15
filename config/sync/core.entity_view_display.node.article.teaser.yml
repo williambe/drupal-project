@@ -1,0 +1,76 @@
+uuid: 23a3270c-d9df-4caf-9e4c-0602a16ba0e1
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.article.field_content_body
+    - field.field.node.article.field_meta_tags
+    - field.field.node.article.field_seo_title
+    - field.field.node.article.field_summary
+    - field.field.node.article.field_temp_image
+    - field.field.node.article.field_title
+    - node.type.article
+  module:
+    - entity_reference_revisions
+    - metatag
+    - simple_background_image_formatter
+    - user
+_core:
+  default_config_hash: AHkQTQDPOJ3eXECLFGYmIMufkmmezFVR96EpdgI5z3E
+id: node.article.teaser
+targetEntityType: node
+bundle: article
+mode: teaser
+content:
+  field_content_body:
+    type: entity_reference_revisions_entity_view
+    weight: 6
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  field_meta_tags:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+  field_seo_title:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_summary:
+    weight: 3
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_temp_image:
+    type: simple_background_image
+    weight: 1
+    label: visually_hidden
+    settings:
+      image_style: ''
+      image_link: ''
+      class: background-image
+      tag: figure
+    third_party_settings: {  }
+  field_title:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  links:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
