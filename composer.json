@@ -37,6 +37,78 @@
         {
           "type": "vcs",
           "url": "https://git.drupal.org/project/phingdrushtask.git"
+        },
+        {
+          "type": "package",
+          "package": {
+            "name": "enyo/dropzone",
+            "version": "4.3.0",
+            "type": "drupal-library",
+            "dist": {
+              "url": "https://github.com/enyo/dropzone/archive/v4.3.0.zip",
+              "type": "zip"
+            }
+          }
+        },
+        {
+          "type": "package",
+          "package": {
+            "name": "kenwheeler/slick",
+            "version": "1.6.0",
+            "type": "drupal-library",
+            "dist": {
+              "url": "https://github.com/kenwheeler/slick/archive/master.zip",
+              "type": "zip"
+            }
+          }
+        },
+        {
+          "type": "package",
+          "package": {
+            "name": "dinbror/blazy",
+            "version": "1.8.2",
+            "type": "drupal-library",
+            "dist": {
+              "url": "https://github.com/dinbror/blazy/archive/1.8.2.zip",
+              "type": "zip"
+            }
+          }
+        },
+        {
+          "type": "package",
+          "package": {
+            "name": "fengyuanchen/cropper",
+            "version": "v3.0.0-beta",
+            "type": "drupal-library",
+            "dist": {
+              "url": "https://github.com/fengyuanchen/cropper/archive/master.zip",
+              "type": "zip"
+            }
+          }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "desandro/masonry",
+                "version": "3.3.1",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/desandro/masonry/archive/v3.3.1.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "desandro/imagesloaded",
+                "version": "3.1.8",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/desandro/imagesloaded/archive/v3.1.8.zip",
+                    "type": "zip"
+                }
+            }
         }
     ],
     "require": {
@@ -60,7 +132,8 @@
         "drupal/simple_background_image_formatter": "^1.1",
         "drupal/config_installer": "^1.4",
         "drupal/twig_field_value": "^1.1",
-        "drupal/image_url_formatter": "^1.0@beta"
+        "drupal/image_url_formatter": "^1.0@beta",
+        "drupal/focal_point": "dev-1.x"
     },
     "require-dev": {
         "behat/mink": "~1.7",

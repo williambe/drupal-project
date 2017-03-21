@@ -1,0 +1,8 @@
+uuid: 5cb5f797-1866-41d5-aabc-336e7e34d220
+langcode: it
+status: true
+dependencies: {  }
+id: data_default
+label: 'data standard'
+locked: false
+pattern: 'j F Y'
