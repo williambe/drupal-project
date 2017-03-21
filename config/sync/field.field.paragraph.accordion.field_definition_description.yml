@@ -1,0 +1,21 @@
+uuid: 0b4e9e12-dd94-41bf-b759-58cce1683422
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_definition_description
+    - paragraphs.paragraphs_type.accordion
+  module:
+    - text
+id: paragraph.accordion.field_definition_description
+field_name: field_definition_description
+entity_type: paragraph
+bundle: accordion
+label: definition_description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

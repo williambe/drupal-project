@@ -1,0 +1,19 @@
+uuid: c3fde316-3b20-409d-bb13-b3052ed6aeb7
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_definition_term
+    - paragraphs.paragraphs_type.accordion
+id: paragraph.accordion.field_definition_term
+field_name: field_definition_term
+entity_type: paragraph
+bundle: accordion
+label: definition_term
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

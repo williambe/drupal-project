@@ -1,0 +1,33 @@
+uuid: 25dd7e6d-62df-445e-8b0b-57d6d39c2c20
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.accordion.field_definition_description
+    - field.field.paragraph.accordion.field_definition_term
+    - paragraphs.paragraphs_type.accordion
+  module:
+    - text
+id: paragraph.accordion.default
+targetEntityType: paragraph
+bundle: accordion
+mode: default
+content:
+  field_definition_description:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+  field_definition_term:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+hidden:
+  created: true
+  status: true
+  uid: true
