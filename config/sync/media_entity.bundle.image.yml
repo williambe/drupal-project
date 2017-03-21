@@ -1,0 +1,16 @@
+uuid: 7b3d86a8-e94a-4de4-922e-538fb34a8cca
+langcode: it
+status: true
+dependencies:
+  module:
+    - media_entity_image
+id: image
+label: Image
+description: 'Use Image for uploading locally hosted images.'
+type: image
+queue_thumbnail_downloads: false
+new_revision: true
+type_configuration:
+  source_field: ''
+  gather_exif: false
+field_map: {  }
