@@ -56,7 +56,7 @@ third_party_settings:
       node_author:
         plugin_id: node_author
         weight: 5
-        label: hidden
+        label: inline
         formatter: author_linked
       node_changed_date:
         plugin_id: node_changed_date
