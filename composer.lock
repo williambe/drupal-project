@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ee254fe5263c6a3de6304d8230a0a6eb",
-    "content-hash": "f5adc8fd0ec994a388770fb0672af053",
+    "hash": "448dc0143820e1c5382f88042ff9ec7d",
+    "content-hash": "e0dc9ae2163425f9a1b05bdde293a0d9",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -637,6 +637,17 @@
                 "resolver"
             ],
             "time": "2012-10-28 21:08:28"
+        },
+        {
+            "name": "dinbror/blazy",
+            "version": "1.8.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/dinbror/blazy/archive/1.8.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "drupal-library"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1310,6 +1321,61 @@
             "homepage": "https://www.drupal.org/project/bg_image_formatter",
             "support": {
                 "source": "http://cgit.drupalcode.org/bg_image_formatter"
+            }
+        },
+        {
+            "name": "drupal/blazy",
+            "version": "1.0.0-rc1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/blazy",
+                "reference": "8.x-1.0-rc1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/blazy-8.x-1.0-rc1.zip",
+                "reference": null,
+                "shasum": "0502916f2cb5b6237f13e5216e12063b8d56ce42"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-rc1",
+                    "datestamp": "1485193983"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Gaus Surahman",
+                    "homepage": "https://www.drupal.org/u/gausarts",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://www.drupal.org/node/2663268/committers",
+                    "role": "Contributor"
+                }
+            ],
+            "description": "Provides basic bLazy integration for lazy loading and multi-serving images.",
+            "homepage": "https://drupal.org/project/blazy",
+            "keywords": [
+                "Drupal",
+                "bLazy",
+                "lazyload"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/blazy",
+                "issues": "https://drupal.org/project/issues/blazy"
             }
         },
         {
@@ -2078,6 +2144,89 @@
             "time": "2017-03-18 16:16:44"
         },
         {
+            "name": "drupal/dropzonejs",
+            "version": "1.0.0-alpha5",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/dropzonejs",
+                "reference": "8.x-1.0-alpha5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/dropzonejs-8.x-1.0-alpha5.zip",
+                "reference": null,
+                "shasum": "c4687dd281c7726ed07379604e4c2d31259c7854"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "require-dev": {
+                "drupal/entity_browser": "*"
+            },
+            "suggest": {
+                "enyo/dropzone": "Required to user drupal/dropzonejs. Dropzone is an easy to use drag'n'drop library."
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha5",
+                    "datestamp": "1487593983"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Janez Urevc",
+                    "homepage": "https://drupal.org/u/slashrsm",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Christian Fritsch",
+                    "homepage": "https://drupal.org/u/chrfritsch",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Primoz Hmeljak",
+                    "homepage": "https://drupal.org/u/Primsi",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "See other contributors",
+                    "homepage": "https://www.drupal.org/node/1998478/committers",
+                    "role": "contributor"
+                },
+                {
+                    "name": "slashrsm",
+                    "homepage": "https://www.drupal.org/user/744628"
+                },
+                {
+                    "name": "wouters_f",
+                    "homepage": "https://www.drupal.org/user/721548"
+                },
+                {
+                    "name": "zkday",
+                    "homepage": "https://www.drupal.org/user/888644"
+                }
+            ],
+            "description": "Drupal integration for DropzoneJS - An open source library that provides drag’n’drop file uploads with image previews.",
+            "homepage": "https://www.drupal.org/project/dropzonejs",
+            "keywords": [
+                "DropzoneJS",
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://www.drupal.org/project/dropzonejs",
+                "issues": "https://www.drupal.org/project/issues/dropzonejs",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
+            }
+        },
+        {
             "name": "drupal/ds",
             "version": "dev-2.x",
             "source": {
@@ -2212,7 +2361,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/entity_browser-8.x-1.0-rc2.zip",
-                "reference": null,
+                "reference": "8.x-1.0-rc2",
                 "shasum": "7954668b9134a8ec2dac2604c482d6521e43ee91"
             },
             "require": {
@@ -2705,7 +2854,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/media_entity_image-8.x-1.2.zip",
-                "reference": null,
+                "reference": "8.x-1.2",
                 "shasum": "d02d1d793a50ea3b9cb5a3219472fdd27980f4f3"
             },
             "require": {
@@ -3528,6 +3677,17 @@
                 "validator"
             ],
             "time": "2017-02-03 22:48:59"
+        },
+        {
+            "name": "enyo/dropzone",
+            "version": "4.3.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/enyo/dropzone/archive/v4.3.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "drupal-library"
         },
         {
             "name": "gabordemooij/redbean",
@@ -7977,7 +8137,9 @@
         "drupal/bg_image_formatter": 10,
         "drupal/image_url_formatter": 10,
         "drupal/focal_point": 20,
-        "drupal/entity_browser": 5
+        "drupal/entity_browser": 5,
+        "drupal/dropzonejs": 15,
+        "drupal/blazy": 5
     },
     "prefer-stable": true,
     "prefer-lowest": false,
