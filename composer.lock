@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "80eaed072e5bad85afa105f290a5cd49",
-    "content-hash": "159085f2adb9bb59279c4dbd74754867",
+    "hash": "ee254fe5263c6a3de6304d8230a0a6eb",
+    "content-hash": "f5adc8fd0ec994a388770fb0672af053",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2202,6 +2202,86 @@
             }
         },
         {
+            "name": "drupal/entity_browser",
+            "version": "1.0.0-rc2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/entity_browser",
+                "reference": "8.x-1.0-rc2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/entity_browser-8.x-1.0-rc2.zip",
+                "reference": null,
+                "shasum": "7954668b9134a8ec2dac2604c482d6521e43ee91"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "require-dev": {
+                "drupal/ctools": "*",
+                "drupal/inline_entity_form": "*",
+                "drupal/media_entity": "*",
+                "drupal/paragraphs": "*",
+                "drupal/token": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev",
+                    "dev-8.x-1.x": "8.1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-rc2",
+                    "datestamp": "1487581984"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Janez Urevc",
+                    "homepage": "https://github.com/slashrsm",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Primoz Hmeljak",
+                    "homepage": "https://github.com/primsi",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "See other contributors",
+                    "homepage": "https://www.drupal.org/node/1943336/committers",
+                    "role": "contributor"
+                },
+                {
+                    "name": "Primsi",
+                    "homepage": "https://www.drupal.org/user/282629"
+                },
+                {
+                    "name": "marcingy",
+                    "homepage": "https://www.drupal.org/user/77320"
+                },
+                {
+                    "name": "samuel.mortenson",
+                    "homepage": "https://www.drupal.org/user/2582268"
+                },
+                {
+                    "name": "slashrsm",
+                    "homepage": "https://www.drupal.org/user/744628"
+                }
+            ],
+            "description": "Entity browsing and selecting component.",
+            "homepage": "http://drupal.org/project/entity_browser",
+            "support": {
+                "source": "http://cgit.drupalcode.org/entity_browser",
+                "issues": "http://drupal.org/project/issues/entity_browser",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
+            }
+        },
+        {
             "name": "drupal/entity_reference_revisions",
             "version": "1.2.0",
             "source": {
@@ -2533,7 +2613,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/media_entity-8.x-1.6.zip",
-                "reference": null,
+                "reference": "8.x-1.6",
                 "shasum": "86fd1478f2448c034660faa30ef34c0e8519fecb"
             },
             "require": {
@@ -2612,6 +2692,67 @@
             "support": {
                 "source": "https://www.drupal.org/project/media_entity",
                 "issues": "https://www.drupal.org/project/issues/media_entity"
+            }
+        },
+        {
+            "name": "drupal/media_entity_image",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/media_entity_image",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/media_entity_image-8.x-1.2.zip",
+                "reference": null,
+                "shasum": "d02d1d793a50ea3b9cb5a3219472fdd27980f4f3"
+            },
+            "require": {
+                "drupal/core": "~8.1",
+                "drupal/media_entity": "~1.0 || ~8.1.0"
+            },
+            "require-dev": {
+                "drupal/entity_browser": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1470170939"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Drupal Media Team",
+                    "homepage": "https://www.drupal.org/user/3260690"
+                },
+                {
+                    "name": "Primsi",
+                    "homepage": "https://www.drupal.org/user/282629"
+                },
+                {
+                    "name": "slashrsm",
+                    "homepage": "https://www.drupal.org/user/744628"
+                }
+            ],
+            "description": "Local images integration for Drupal Media entity.",
+            "homepage": "https://www.drupal.org/project/media_entity_image",
+            "keywords": [
+                "Drupal",
+                "image",
+                "media"
+            ],
+            "support": {
+                "source": "https://www.drupal.org/project/media_entity_image",
+                "issues": "https://www.drupal.org/project/issues/media_entity_image"
             }
         },
         {
@@ -7835,7 +7976,8 @@
         "williambe/wb_paragraphs": 20,
         "drupal/bg_image_formatter": 10,
         "drupal/image_url_formatter": 10,
-        "drupal/focal_point": 20
+        "drupal/focal_point": 20,
+        "drupal/entity_browser": 5
     },
     "prefer-stable": true,
     "prefer-lowest": false,

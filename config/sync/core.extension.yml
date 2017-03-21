@@ -19,6 +19,7 @@ module:
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
+  entity: 0
   entity_reference_revisions: 0
   features: 0
   features_ui: 0
@@ -34,6 +35,7 @@ module:
   layout_plugin: 0
   link: 0
   locale: 0
+  media_entity: 0
   menu_ui: 0
   metatag: 0
   node: 0
