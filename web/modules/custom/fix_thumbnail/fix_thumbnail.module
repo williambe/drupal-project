@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains ca_site_deploy.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function fix_thumbnail_site_deploy_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the ca_site_deploy module.
+    case 'help.page.ca_site_deploy':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Run required updates when new modules or features are deployed.') . '</p>';
+      return $output;
+
+    default:
+  }
+}

@@ -1,0 +1,5 @@
+name: fix_thumbnail
+type: module
+description: Run required updates when new modules or features are deployed.
+core: 8.x
+package: fix_thumbnail

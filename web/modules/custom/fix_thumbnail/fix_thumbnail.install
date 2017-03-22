@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the Christian Aid site.
+ *
+ * Add function MODULE_site_deploy_update_80xx() for each new update.
+ */
+
+/**
+ * Implements hook_install().
+ */
+/**
+ * Update Media Image Entity Thumbnails.
+ */
+function fix_thumbnail_deploy_update_8001() {
+  $ids = \Drupal::entityQuery('media')
+    ->condition('bundle', 'image')
+    ->execute();
+  foreach ($ids as $id) {
+    $entity = Drupal\media_entity\Entity\Media::load($id);
+      $entity->thumbnail->target_id = $entity->field_image->target_id;
+      $entity->save();
+  }
+}
