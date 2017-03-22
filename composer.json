@@ -198,8 +198,10 @@
             "enable-patching" : true,
             "drupal/core": {
                 "Stable theme does not respect visually hidden field label display option": "https://www.drupal.org/files/issues/stable_theme_does_not-2779919-10.patch"     
+            },
+            "drupal/media_entity_image": {
+                "Fix media entity image thumbnail problem": "https://www.drupal.org/files/issues/media_entity_image_thumbnail_problem_2767501_13.patch"
             }
-
         }
     }
 }

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.article.field_content_body
+    - field.field.node.article.field_main_media
     - field.field.node.article.field_meta_tags
     - field.field.node.article.field_seo_title
     - field.field.node.article.field_summary
@@ -39,6 +40,14 @@ content:
       form_display_mode: default
       default_paragraph_type: ''
     third_party_settings: {  }
+  field_main_media:
+    weight: 27
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
   field_meta_tags:
     weight: 4
     settings: {  }

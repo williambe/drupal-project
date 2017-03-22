@@ -1,0 +1,31 @@
+uuid: c41fc8d1-29b5-440b-950e-c7a280bf18fc
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.cover
+    - field.field.media.image.field_image
+    - media_entity.bundle.image
+  module:
+    - simple_background_image_formatter
+id: media.image.cover
+targetEntityType: media
+bundle: image
+mode: cover
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+      class: cover
+      tag: div
+    third_party_settings: {  }
+    type: simple_background_image
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "448dc0143820e1c5382f88042ff9ec7d",
-    "content-hash": "e0dc9ae2163425f9a1b05bdde293a0d9",
+    "hash": "d0b44198e14cdb41f3b5960fd0059cdf",
+    "content-hash": "c3c64546f54ac44304c7e7768757f250",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1334,7 +1334,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/blazy-8.x-1.0-rc1.zip",
-                "reference": null,
+                "reference": "8.x-1.0-rc1",
                 "shasum": "0502916f2cb5b6237f13e5216e12063b8d56ce42"
             },
             "require": {
@@ -2154,7 +2154,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/dropzonejs-8.x-1.0-alpha5.zip",
-                "reference": null,
+                "reference": "8.x-1.0-alpha5",
                 "shasum": "c4687dd281c7726ed07379604e4c2d31259c7854"
             },
             "require": {
@@ -2854,7 +2854,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/media_entity_image-8.x-1.2.zip",
-                "reference": "8.x-1.2",
+                "reference": null,
                 "shasum": "d02d1d793a50ea3b9cb5a3219472fdd27980f4f3"
             },
             "require": {
@@ -2872,6 +2872,9 @@
                 "drupal": {
                     "version": "8.x-1.2",
                     "datestamp": "1470170939"
+                },
+                "patches_applied": {
+                    "Fix media entity image thumbnail problem": "https://www.drupal.org/files/issues/media_entity_image_thumbnail_problem_2767501_13.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",

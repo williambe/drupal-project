@@ -8,9 +8,9 @@ id: image
 label: Image
 description: 'Use Image for uploading locally hosted images.'
 type: image
-queue_thumbnail_downloads: false
+queue_thumbnail_downloads: true
 new_revision: true
 type_configuration:
-  source_field: ''
+  source_field: field_image
   gather_exif: false
 field_map: {  }

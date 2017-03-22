@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.full
     - field.field.node.article.field_content_body
+    - field.field.node.article.field_main_media
     - field.field.node.article.field_meta_tags
     - field.field.node.article.field_seo_title
     - field.field.node.article.field_summary
@@ -29,6 +30,7 @@ third_party_settings:
     regions:
       cover_row:
         - field_temp_image
+        - field_main_media
       header_row:
         - 'dynamic_block_field:node-breadcrumbs'
         - field_title
@@ -45,27 +47,27 @@ third_party_settings:
     fields:
       'bundle_field:node':
         plugin_id: 'bundle_field:node'
-        weight: 4
+        weight: 5
         label: hidden
         formatter: default
       'dynamic_block_field:node-breadcrumbs':
         plugin_id: 'dynamic_block_field:node-breadcrumbs'
-        weight: 1
+        weight: 2
         label: hidden
         formatter: default
       node_author:
         plugin_id: node_author
-        weight: 5
+        weight: 6
         label: inline
         formatter: author_linked
       node_changed_date:
         plugin_id: node_changed_date
-        weight: 7
+        weight: 8
         label: inline
         formatter: ds_post_date_data_default
       node_post_date:
         plugin_id: node_post_date
-        weight: 6
+        weight: 7
         label: inline
         formatter: ds_post_date_data_default
 _core:
@@ -77,20 +79,28 @@ mode: full
 content:
   field_content_body:
     type: entity_reference_revisions_entity_view
-    weight: 8
+    weight: 9
     label: visually_hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
+  field_main_media:
+    type: entity_reference_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: cover
+      link: false
+    third_party_settings: {  }
   field_meta_tags:
-    weight: 10
+    weight: 11
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: metatag_empty_formatter
   field_summary:
-    weight: 3
+    weight: 4
     label: visually_hidden
     settings:
       link_to_entity: false
@@ -107,14 +117,14 @@ content:
       tag: div
     third_party_settings: {  }
   field_title:
-    weight: 2
+    weight: 3
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
   links:
-    weight: 9
+    weight: 10
     settings: {  }
     third_party_settings: {  }
 hidden:
