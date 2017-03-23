@@ -15,6 +15,7 @@ module:
   config_update: 0
   config_update_ui: 0
   contextual: 0
+  crop: 0
   ctools: 0
   datetime: 0
   dblog: 0
@@ -33,6 +34,7 @@ module:
   file: 0
   filter: 0
   fix_thumbnail: 0
+  focal_point: 0
   help: 0
   image: 0
   image_url_formatter: 0

@@ -1,0 +1,16 @@
+uuid: b906c829-55b3-42b4-a524-f4193d152ed3
+langcode: it
+status: true
+dependencies:
+  module:
+    - focal_point
+name: wide_xl
+label: wide_xl
+effects:
+  e3d72523-5272-4506-8b72-f5a8d5c3e7c0:
+    uuid: e3d72523-5272-4506-8b72-f5a8d5c3e7c0
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 2560
+      height: 1440

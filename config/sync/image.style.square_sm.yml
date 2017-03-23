@@ -1,0 +1,16 @@
+uuid: 7f5e747d-c9af-4442-9a90-88cafdf8b81c
+langcode: it
+status: true
+dependencies:
+  module:
+    - focal_point
+name: square_sm
+label: square_sm
+effects:
+  a3114935-de9a-4475-bf42-8a3cd8cd5eb3:
+    uuid: a3114935-de9a-4475-bf42-8a3cd8cd5eb3
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 480
+      height: 480

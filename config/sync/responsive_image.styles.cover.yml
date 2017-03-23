@@ -1,0 +1,36 @@
+uuid: a6e8cf3e-db47-4de6-a9e0-837b3ff71e4f
+langcode: it
+status: true
+dependencies:
+  config:
+    - image.style.classic_lg
+    - image.style.square_md
+    - image.style.square_sm
+    - image.style.wide_xl
+  theme:
+    - patternlab
+id: cover
+label: Cover
+image_style_mappings:
+  -
+    breakpoint_id: patternlab.xxxlarge
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: wide_xl
+  -
+    breakpoint_id: patternlab.xxlarge
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: classic_lg
+  -
+    breakpoint_id: patternlab.large
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: square_md
+  -
+    breakpoint_id: patternlab.small
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: square_sm
+breakpoint_group: patternlab
+fallback_image_style: classic_lg
