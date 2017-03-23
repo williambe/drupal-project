@@ -29,6 +29,7 @@
     ],
     "require": {
         "composer/installers": "^1.2",
+        "cweagans/composer-patches": "^1.6",
         "drupal-composer/drupal-scaffold": "^2.2",
         "cweagans/composer-patches": "^1.6",
         "drupal/core": "~8.0",
@@ -58,6 +59,9 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
+    "config": {
+      "sort-packages": true
+    },
     "autoload": {
         "classmap": [
             "scripts/composer/ScriptHandler.php"
