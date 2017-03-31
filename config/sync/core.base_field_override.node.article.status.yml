@@ -1,0 +1,22 @@
+uuid: 3eec9830-bb36-433e-8bfa-fcfd802b651d
+langcode: it
+status: true
+dependencies:
+  config:
+    - node.type.article
+id: node.article.status
+field_name: status
+entity_type: node
+bundle: article
+label: 'Publishing status'
+description: 'Un valore vero o falso (booleano) indicante quando un nodo sia nello stato pubblicato oppure no.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Acceso
+  off_label: Spento
+field_type: boolean

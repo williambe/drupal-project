@@ -8,15 +8,56 @@ dependencies:
     - field.field.node.article.field_meta_tags
     - field.field.node.article.field_seo_title
     - field.field.node.article.field_summary
-    - field.field.node.article.field_temp_image
+    - field.field.node.article.field_tags
     - field.field.node.article.field_title
-    - image.style.thumbnail
+    - field.field.node.article.field_topic
     - node.type.article
   module:
-    - image
+    - field_group
     - metatag
     - paragraphs
     - path
+third_party_settings:
+  field_group:
+    group_seo:
+      children:
+        - field_seo_title
+        - field_meta_tags
+      parent_name: ''
+      weight: 3
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: SEO
+    group_page_header:
+      children:
+        - field_title
+        - field_summary
+      parent_name: ''
+      weight: 2
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Testata
+    group_grouping:
+      children:
+        - field_topic
+        - field_tags
+      parent_name: ''
+      weight: 4
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: classificazione
 _core:
   default_config_hash: rAtVweKT5fhfYFg-vrVA6oMa86agJN9lnCTaBynU1Rk
 id: node.article.default
@@ -30,18 +71,18 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_content_body:
-    type: entity_reference_paragraphs
-    weight: 11
+    type: paragraphs
+    weight: 5
     settings:
       title: Paragraph
       title_plural: Paragraphs
       edit_mode: open
-      add_mode: dropdown
+      add_mode: button
       form_display_mode: default
-      default_paragraph_type: ''
+      default_paragraph_type: heading
     third_party_settings: {  }
   field_main_media:
-    weight: 27
+    weight: 1
     settings:
       match_operator: CONTAINS
       size: 60
@@ -56,36 +97,40 @@ content:
   field_seo_title:
     weight: 3
     settings:
-      size: 60
+      size: 80
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
   field_summary:
     weight: 2
     settings:
-      size: 60
+      size: 256
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
-  field_temp_image:
-    weight: 26
+  field_tags:
+    weight: 14
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: image_image
+    type: entity_reference_autocomplete
   field_title:
     weight: 1
     settings:
-      size: 60
+      size: 80
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
-  langcode:
-    type: language_select
-    weight: 5
-    settings: {  }
+  field_topic:
+    weight: 13
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
+    type: entity_reference_autocomplete
   path:
     type: path
     weight: 10
@@ -118,4 +163,5 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  langcode: true

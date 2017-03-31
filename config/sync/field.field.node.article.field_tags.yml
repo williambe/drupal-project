@@ -1,28 +1,28 @@
-uuid: 45392939-7076-4424-a6ce-57c02e2461c3
+uuid: a0245936-f9de-4ca8-a667-096159334dd4
 langcode: it
 status: true
 dependencies:
   config:
-    - field.storage.node.field_main_media
-    - media_entity.bundle.image
+    - field.storage.node.field_tags
     - node.type.article
-id: node.article.field_main_media
-field_name: field_main_media
+    - taxonomy.vocabulary.tags
+id: node.article.field_tags
+field_name: field_tags
 entity_type: node
 bundle: article
-label: 'Media principale'
+label: Tag
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:media'
+  handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      image: image
+      tags: tags
     sort:
       field: _none
-    auto_create: true
+    auto_create: false
     auto_create_bundle: ''
 field_type: entity_reference

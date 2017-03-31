@@ -8,14 +8,40 @@ dependencies:
     - field.field.node.article.field_meta_tags
     - field.field.node.article.field_seo_title
     - field.field.node.article.field_summary
-    - field.field.node.article.field_temp_image
+    - field.field.node.article.field_tags
     - field.field.node.article.field_title
+    - field.field.node.article.field_topic
     - node.type.article
   module:
+    - ds
     - entity_reference_revisions
     - metatag
-    - simple_background_image_formatter
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: wb_one_column
+      path: themes/custom/avvguerra-starter
+      library: ''
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes: {  }
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+    regions:
+      header_row:
+        - links
+        - field_title
+        - field_summary
+        - field_seo_title
+        - field_meta_tags
+        - field_content_body
+        - field_main_media
 _core:
   default_config_hash: AHkQTQDPOJ3eXECLFGYmIMufkmmezFVR96EpdgI5z3E
 id: node.article.default
@@ -58,16 +84,13 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-  field_temp_image:
-    type: simple_background_image
-    weight: 1
-    label: visually_hidden
+  field_tags:
+    weight: 8
+    label: above
     settings:
-      image_style: ''
-      image_link: ''
-      class: background-image
-      tag: figure
+      link: true
     third_party_settings: {  }
+    type: entity_reference_label
   field_title:
     weight: 2
     label: hidden
@@ -75,9 +98,23 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+  field_topic:
+    weight: 9
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  langcode:
+    type: language
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+      native_language: false
+    third_party_settings: {  }
   links:
     weight: 0
     settings: {  }
     third_party_settings: {  }
-hidden:
-  langcode: true
+hidden: {  }

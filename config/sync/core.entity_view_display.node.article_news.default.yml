@@ -1,0 +1,25 @@
+uuid: 49d723b1-572a-4703-b020-51aa3f551bc2
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.node.article_news.body
+    - node.type.article_news
+  module:
+    - text
+    - user
+id: node.article_news.default
+targetEntityType: node
+bundle: article_news
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  langcode: true

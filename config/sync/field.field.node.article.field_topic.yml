@@ -1,28 +1,28 @@
-uuid: 45392939-7076-4424-a6ce-57c02e2461c3
+uuid: f3d049e0-2acb-4da5-9d26-018f036398f5
 langcode: it
 status: true
 dependencies:
   config:
-    - field.storage.node.field_main_media
-    - media_entity.bundle.image
+    - field.storage.node.field_topic
     - node.type.article
-id: node.article.field_main_media
-field_name: field_main_media
+    - taxonomy.vocabulary.topics
+id: node.article.field_topic
+field_name: field_topic
 entity_type: node
 bundle: article
-label: 'Media principale'
+label: Tema
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:media'
+  handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      image: image
+      topics: topics
     sort:
       field: _none
-    auto_create: true
+    auto_create: false
     auto_create_bundle: ''
 field_type: entity_reference

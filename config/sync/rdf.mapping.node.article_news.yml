@@ -1,0 +1,14 @@
+uuid: 21b4a1df-e54d-429e-b2b1-174d3c633b38
+langcode: it
+status: true
+dependencies:
+  config:
+    - node.type.article_news
+  module:
+    - node
+id: node.article_news
+targetEntityType: node
+bundle: article_news
+types:
+  - ''
+fieldMappings: {  }

@@ -1,10 +1,10 @@
-uuid: 5d70cf62-6836-461e-82fc-b8703ff1d3f1
+uuid: a19aaa31-d298-4329-af50-fef5ac044051
 langcode: it
 status: true
 dependencies:
   module:
     - media_entity
-id: media.cover
-label: Cover
+id: media.teaser
+label: Teaser
 targetEntityType: media
 cache: true

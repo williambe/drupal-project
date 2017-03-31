@@ -9,14 +9,11 @@ dependencies:
     - field.field.node.article.field_meta_tags
     - field.field.node.article.field_seo_title
     - field.field.node.article.field_summary
-    - field.field.node.article.field_temp_image
     - field.field.node.article.field_title
     - node.type.article
   module:
     - ds
     - entity_reference_revisions
-    - metatag
-    - simple_background_image_formatter
     - user
 third_party_settings:
   ds:
@@ -26,40 +23,43 @@ third_party_settings:
       library: ''
       disable_css: false
       entity_classes: all_classes
-      settings: {  }
+      settings:
+        wrappers:
+          cover_row: div
+          header_row: div
+          metadata_row: div
+          main_row: div
+          footer_row: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
     regions:
       cover_row:
-        - field_temp_image
         - field_main_media
       header_row:
         - 'dynamic_block_field:node-breadcrumbs'
         - field_title
         - field_summary
       metadata_row:
-        - 'bundle_field:node'
         - node_author
         - node_post_date
         - node_changed_date
       main_row:
         - field_content_body
-        - links
-        - field_meta_tags
     fields:
-      'bundle_field:node':
-        plugin_id: 'bundle_field:node'
-        weight: 5
-        label: hidden
-        formatter: default
       'dynamic_block_field:node-breadcrumbs':
         plugin_id: 'dynamic_block_field:node-breadcrumbs'
-        weight: 2
+        weight: 1
         label: hidden
         formatter: default
       node_author:
         plugin_id: node_author
-        weight: 6
+        weight: 5
         label: inline
-        formatter: author_linked
+        formatter: author
       node_changed_date:
         plugin_id: node_changed_date
         weight: 8
@@ -67,7 +67,7 @@ third_party_settings:
         formatter: ds_post_date_data_default
       node_post_date:
         plugin_id: node_post_date
-        weight: 7
+        weight: 6
         label: inline
         formatter: ds_post_date_data_default
 _core:
@@ -79,7 +79,7 @@ mode: full
 content:
   field_content_body:
     type: entity_reference_revisions_entity_view
-    weight: 9
+    weight: 7
     label: visually_hidden
     settings:
       view_mode: default
@@ -87,46 +87,28 @@ content:
     third_party_settings: {  }
   field_main_media:
     type: entity_reference_entity_view
-    weight: 1
+    weight: 0
     label: hidden
     settings:
       view_mode: cover
       link: false
     third_party_settings: {  }
-  field_meta_tags:
-    weight: 11
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: metatag_empty_formatter
   field_summary:
-    weight: 4
-    label: visually_hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-  field_temp_image:
-    type: simple_background_image
-    weight: 0
-    label: hidden
-    settings:
-      image_style: ''
-      image_link: ''
-      class: cover
-      tag: div
-    third_party_settings: {  }
-  field_title:
     weight: 3
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-  links:
-    weight: 10
-    settings: {  }
+  field_title:
+    type: string
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
 hidden:
+  field_meta_tags: true
   field_seo_title: true
   langcode: true
+  links: true

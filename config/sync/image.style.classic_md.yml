@@ -1,0 +1,16 @@
+uuid: b29cacff-8164-4d15-b37e-99ad3fb8ff05
+langcode: it
+status: true
+dependencies:
+  module:
+    - focal_point
+name: classic_md
+label: classic_md
+effects:
+  c5223f93-1072-4dad-9c0f-5a1e0150024a:
+    uuid: c5223f93-1072-4dad-9c0f-5a1e0150024a
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 768
+      height: 512

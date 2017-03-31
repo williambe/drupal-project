@@ -120,7 +120,6 @@
         "drupal/console": "~1.0",
         "williambe/wb_profile": "dev-master",
         "williambe/avvguerra-starter": "dev-avvguerra-starter",
-        "drupal/ui_patterns": "^1.0@beta",
         "drupal/field_group": "^1.0@RC",
         "drupal/features": "^3.2",
         "drupal/ds": "dev-2.x",
@@ -141,7 +140,8 @@
         "drupal/dropzonejs": "^1.0@alpha",
         "drupal/blazy": "^1.0@RC",
         "enyo/dropzone": "^4.3",
-        "dinbror/blazy": "^1.8"
+        "dinbror/blazy": "^1.8",
+        "drupal/devel": "^1.0@RC"
     },
     "require-dev": {
         "behat/mink": "~1.7",
