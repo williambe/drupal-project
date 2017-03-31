@@ -386,16 +386,16 @@
         },
         {
             "name": "cweagans/composer-patches",
-            "version": "1.6.0",
+            "version": "1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cweagans/composer-patches.git",
-                "reference": "7cd5c6eb7e68b8f7436ce1a7b9fffa4418bf59c6"
+                "reference": "b3036f23b73570ab5d869e345277786c8eb248a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cweagans/composer-patches/zipball/7cd5c6eb7e68b8f7436ce1a7b9fffa4418bf59c6",
-                "reference": "7cd5c6eb7e68b8f7436ce1a7b9fffa4418bf59c6",
+                "url": "https://api.github.com/repos/cweagans/composer-patches/zipball/b3036f23b73570ab5d869e345277786c8eb248a9",
+                "reference": "b3036f23b73570ab5d869e345277786c8eb248a9",
                 "shasum": ""
             },
             "require": {
@@ -426,7 +426,7 @@
                 }
             ],
             "description": "Provides a way to patch Composer packages.",
-            "time": "2016-12-01 01:19:32"
+            "time": "2017-03-19 18:18:52"
         },
         {
             "name": "davidbarratt/custom-installer",
@@ -2010,17 +2010,17 @@
         },
         {
             "name": "drupal/crop",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/crop",
-                "reference": "8.x-1.0"
+                "reference": "8.x-1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/crop-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "c59b10336821f0ef99f6d2770a72c400e167d979"
+                "url": "https://ftp.drupal.org/files/projects/crop-8.x-1.1.zip",
+                "reference": null,
+                "shasum": "1a5930d27f3ff4643b8f28fc554aa9a7413404c2"
             },
             "require": {
                 "drupal/core": "*"
@@ -2034,8 +2034,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1468356239"
+                    "version": "8.x-1.1",
+                    "datestamp": "1490287983"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2069,7 +2069,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/ctools",
-                "reference": "abea18101ce79143333385b7c6f3f1613b6154f6"
+                "reference": "52b174ba66c6d38a7da21508c8896322a9bd051f"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -2080,8 +2080,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-alpha27+5-dev",
-                    "datestamp": "1489853282"
+                    "version": "8.x-3.0-beta1+0-dev",
+                    "datestamp": "1490677684"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2141,7 +2141,7 @@
                 "source": "http://cgit.drupalcode.org/ctools",
                 "issues": "https://www.drupal.org/project/issues/ctools"
             },
-            "time": "2017-03-18 16:16:44"
+            "time": "2017-03-28 05:05:29"
         },
         {
             "name": "drupal/devel",
@@ -2235,17 +2235,17 @@
         },
         {
             "name": "drupal/dropzonejs",
-            "version": "1.0.0-alpha5",
+            "version": "1.0.0-alpha6",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/dropzonejs",
-                "reference": "8.x-1.0-alpha5"
+                "reference": "8.x-1.0-alpha6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/dropzonejs-8.x-1.0-alpha5.zip",
-                "reference": "8.x-1.0-alpha5",
-                "shasum": "c4687dd281c7726ed07379604e4c2d31259c7854"
+                "url": "https://ftp.drupal.org/files/projects/dropzonejs-8.x-1.0-alpha6.zip",
+                "reference": null,
+                "shasum": "7cc19398eed42b584c06e442f57c4da64b4c4bbb"
             },
             "require": {
                 "drupal/core": "*"
@@ -2262,8 +2262,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha5",
-                    "datestamp": "1487593983"
+                    "version": "8.x-1.0-alpha6",
+                    "datestamp": "1490199183"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3299,7 +3299,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/token",
-                "reference": "a3b68ccb7c5657a8138c999731dca293ed7991a8"
+                "reference": "24451c97d4e56e1f515e473d092e52cd5ae4740e"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -3347,10 +3347,9 @@
             "description": "Provides a user interface for the Token API and some missing core tokens.",
             "homepage": "https://www.drupal.org/project/token",
             "support": {
-                "source": "http://cgit.drupalcode.org/token",
-                "issues": "https://www.drupal.org/project/issues/token"
+                "source": "http://cgit.drupalcode.org/token"
             },
-            "time": "2017-01-01 16:26:13"
+            "time": "2017-03-29 06:58:20"
         },
         {
             "name": "drupal/twig_field_value",
@@ -3393,98 +3392,6 @@
             "homepage": "https://www.drupal.org/project/twig_field_value",
             "support": {
                 "source": "http://cgit.drupalcode.org/twig_field_value"
-            }
-        },
-        {
-            "name": "drupal/ui_patterns",
-            "version": "1.0.0-beta6",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/ui_patterns",
-                "reference": "8.x-1.0-beta6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ui_patterns-8.x-1.0-beta6.zip",
-                "reference": "8.x-1.0-beta6",
-                "shasum": "0906f79debba2a17314d9590f71f5257305765bd"
-            },
-            "require": {
-                "drupal/core": "~8.0"
-            },
-            "require-dev": {
-                "drupal/coder": "2.8",
-                "drupal/coffee": "*",
-                "drupal/ds": "*",
-                "drupal/entity_reference_revisions": "*",
-                "drupal/features_ui": "*",
-                "drupal/field_group": "*",
-                "drupal/layout_plugin": "*",
-                "drupal/page_manager_ui": "*",
-                "drupal/panels": "*",
-                "drupal/paragraphs": "*",
-                "drupal/token": "*",
-                "drupal/ui_patterns_ds": "*",
-                "drupal/ui_patterns_field_group": "*",
-                "drupal/ui_patterns_layouts": "*",
-                "drupal/ui_patterns_views": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0-beta6",
-                    "datestamp": "1489923783"
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "scripts": {
-                "post-install-cmd": [
-                    "./vendor/bin/phpcs --config-set installed_paths ../../drupal/coder/coder_sniffer",
-                    "./vendor/bin/phpcs --config-set show_progress 1",
-                    "cp ./tests/scripts/pre-push.sh .git/hooks/pre-push && chmod +x .git/hooks/pre-push"
-                ],
-                "post-update-cmd": [
-                    "./vendor/bin/phpcs --config-set installed_paths ../../drupal/coder/coder_sniffer",
-                    "./vendor/bin/phpcs --config-set show_progress 1",
-                    "cp ./tests/scripts/pre-push.sh .git/hooks/pre-push && chmod +x .git/hooks/pre-push"
-                ],
-                "phpcs": [
-                    "./vendor/bin/phpcs --standard=Drupal,DrupalPractice ./src ./tests/src ./modules --ignore=./modules/ui_patterns_test"
-                ],
-                "phpcbf": [
-                    "./vendor/bin/phpcbf --standard=Drupal,DrupalPractice ./src ./tests/src ./modules --ignore=./modules/ui_patterns_test"
-                ]
-            },
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Nuvole Web",
-                    "homepage": "https://www.drupal.org/user/186696",
-                    "email": "info@nuvole.org"
-                },
-                {
-                    "name": "bircher",
-                    "homepage": "https://www.drupal.org/user/1344166"
-                },
-                {
-                    "name": "pescetti",
-                    "homepage": "https://www.drupal.org/user/436244"
-                }
-            ],
-            "description": "UI Patterns.",
-            "homepage": "https://www.drupal.org/project/ui_patterns",
-            "keywords": [
-                "drupal",
-                "ui",
-                "web"
-            ],
-            "support": {
-                "source": "http://cgit.drupalcode.org/ui_patterns"
             }
         },
         {
@@ -6245,16 +6152,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.32.0",
+            "version": "v1.33.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "9935b662e24d6e634da88901ab534cc12e8c728f"
+                "reference": "05cf49921b13f6f01d3cfdf9018cfa7a8086fd5a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/9935b662e24d6e634da88901ab534cc12e8c728f",
-                "reference": "9935b662e24d6e634da88901ab534cc12e8c728f",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/05cf49921b13f6f01d3cfdf9018cfa7a8086fd5a",
+                "reference": "05cf49921b13f6f01d3cfdf9018cfa7a8086fd5a",
                 "shasum": ""
             },
             "require": {
@@ -6263,12 +6170,12 @@
             "require-dev": {
                 "psr/container": "^1.0",
                 "symfony/debug": "~2.7",
-                "symfony/phpunit-bridge": "~3.2"
+                "symfony/phpunit-bridge": "~3.3@dev"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.32-dev"
+                    "dev-master": "1.33-dev"
                 }
             },
             "autoload": {
@@ -6303,7 +6210,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2017-02-27 00:07:03"
+            "time": "2017-03-22 15:40:09"
         },
         {
             "name": "webflo/drupal-finder",
@@ -6444,14 +6351,14 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:williambe/avvguerra-starter.git",
-                "reference": "e01ee434d34b5f1c97fc388a3bdea31f7e0d5851"
+                "reference": "5e8364d29dd6529369f767e31b06166a3d73f8c5"
             },
             "type": "drupal-custom-theme",
             "license": [
                 "GPL-2.0+"
             ],
             "description": "Avvocato Guerra Starter",
-            "time": "2017-03-10 15:56:48"
+            "time": "2017-03-31 14:53:55"
         },
         {
             "name": "williambe/wb_article",
@@ -6459,11 +6366,11 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:williambe/wb_article.git",
-                "reference": "40f7038c748883800c01c56d2ae982bcadd74cb0"
+                "reference": "cdd735dc1f9068a2233c8f4d93e4ab6b579f62cf"
             },
             "type": "drupal-features-module",
             "description": "Provides Article content type and related configuration.",
-            "time": "2017-03-03 14:36:12"
+            "time": "2017-03-31 15:03:01"
         },
         {
             "name": "williambe/wb_core",
@@ -6471,11 +6378,11 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:williambe/wb_core.git",
-                "reference": "a9f0855f63eee78659cfeb544d7330853d56fb65"
+                "reference": "8ff1fc8e2c8577535d5d7381d4020928ae3fa26e"
             },
             "type": "drupal-features-module",
             "description": "Handles general site configuration.",
-            "time": "2017-03-03 14:34:31"
+            "time": "2017-03-31 15:14:57"
         },
         {
             "name": "williambe/wb_paragraphs",
@@ -6483,11 +6390,11 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:williambe/wb_paragraphs.git",
-                "reference": "709ad2ca5a524756a87f9fa92a23a46d0b8af5b8"
+                "reference": "dccd8557ae1b4cfae1114eb60bcb59fec23869ef"
             },
             "type": "drupal-features-module",
             "description": "Handles paragraphs type and related fields.",
-            "time": "2017-02-16 14:13:41"
+            "time": "2017-03-31 15:13:55"
         },
         {
             "name": "williambe/wb_profile",
@@ -6495,12 +6402,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/williambe/wb_profile.git",
-                "reference": "b93d1957d8dcffcda6cb10516878b17d3e31b3cc"
+                "reference": "0eb19f28691ac10cc157924da4128627a6ccd839"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/williambe/wb_profile/zipball/b93d1957d8dcffcda6cb10516878b17d3e31b3cc",
-                "reference": "b93d1957d8dcffcda6cb10516878b17d3e31b3cc",
+                "url": "https://api.github.com/repos/williambe/wb_profile/zipball/0eb19f28691ac10cc157924da4128627a6ccd839",
+                "reference": "0eb19f28691ac10cc157924da4128627a6ccd839",
                 "shasum": ""
             },
             "require": {
@@ -6518,7 +6425,6 @@
                 "drupal/rdfui": "1.x-dev",
                 "drupal/redirect": "1.x-dev",
                 "drupal/token": "1.x-dev",
-                "drupal/ui_patterns": "^1.0@beta",
                 "drupal/xmlsitemap": "1.x-dev"
             },
             "type": "drupal-profile",
@@ -6530,7 +6436,7 @@
                 "source": "https://github.com/williambe/wb_profile/tree/master",
                 "issues": "https://github.com/williambe/wb_profile/issues"
             },
-            "time": "2017-02-07 17:25:20"
+            "time": "2017-03-31 15:19:02"
         },
         {
             "name": "zendframework/zend-diactoros",
