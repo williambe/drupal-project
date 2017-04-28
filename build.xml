@@ -7,8 +7,7 @@
   <property file="build.yml"/>
 
   <!-- Import drush tasks -->
-
-  <import file="${composer.phingdrushimport}" />
+  <import file="./vendor/drupal/phingdrushtask/import.xml" />
 
   <target name="debug">
     <echo>themeroot property: ${composer.themeroot}</echo>
@@ -33,12 +32,6 @@
   <target name="site-install">
         <drush command="site-install" root="${composer.drupalroot}" assume="yes">
             <option name="locale" value="${drupal.locale}" />
-<!--     <mkdir dir="${composer.root}/${project.author}"/> -->  
-  </target>
-
-  <target name="site-install">
-        <drush command="site-install" root="${composer.drupalroot}" assume="yes">
-            <option name="locale" value=$"{drupal.locale}" />
             <option name="site-name" value="${drupal.site.name}" />
             <option name="account-name" value="${drupal.account.name}"/>
             <option name="account-pass" value="${drupal.account.password}"/>

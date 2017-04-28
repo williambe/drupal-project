@@ -3,12 +3,6 @@
     "description": "Project template for Drupal 8 projects with composer",
     "type": "project",
     "license": "GPL-2.0+",
-    "authors": [
-        {
-            "name": "",
-            "role": ""
-        }
-    ],
     "repositories": [
         {
             "type": "composer",
@@ -34,8 +28,6 @@
         "drupal/console": "~1.0",
         "drupal/core": "~8.0",
         "drush/drush": "~8.0",
-        "williambe/wb_profile": "dev-master",
-        "williambe/pattern-lab-starter": "dev-starterkit_wb",
         "drupal/ui_patterns": "^1.0@beta",
         "drupal/field_group": "^1.0@RC",
         "drupal/features": "^3.2",
@@ -57,10 +49,6 @@
         "phing/phing": "~2.10",
         "drupal/phingdrushtask": "^1.1",
         "phpunit/phpunit": ">=4.8.28 <5",
-        "mikey179/vfsStream": "~1.2",
-        "phing/phing": "~2.10",
-        "drupal/phingdrushtask": "^1.1",
-        "phpunit/phpunit": "~4.8",
         "symfony/css-selector": "~2.8"
     },
     "conflict": {
@@ -104,7 +92,8 @@
             "drush/contrib/{$name}": ["type:drupal-drush"]
         },
         "custom-installer": {
-            "web/modules/features/{$name}": ["type:drupal-features-module"]
+            "web/modules/features/{$name}": ["type:drupal-features-module"],
+            "web/profiles/custom/{$name}": ["type:drupal-custom-profile"]
         },
         "_comment_patches": "Temporarily enabling patches on chained composer.json until config_installer is on core",
         "patches": {
