@@ -36,9 +36,7 @@
         "webflo/drupal-finder": "^0.2.1",
         "webmozart/path-util": "^2.3",
         "williambe/wb_profile": "dev-master",
-        "williambe/pattern-lab-starter": "dev-starterkit_wb",
-        "drupal/ui_patterns": "^1.0@beta",
-        "drupal/field_group": "^1.0@RC"
+        "williambe/pattern-lab-starter": "dev-starterkit_wb"
     },
     "require-dev": {
         "behat/mink": "~1.7",
